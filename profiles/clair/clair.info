@@ -1,0 +1,72 @@
+; Packaging information for clair
+name = "CLAIR"
+description = "Collections and Internal Records management system"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = page_manager
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = user
+; Other
+dependencies[] = navbar
+dependencies[] = panels_breadcrumbs
+; Panels
+dependencies[] = panelizer
+dependencies[] = panels
+dependencies[] = panels_ipe
+dependencies[] = panels_mini
+dependencies[] = panels_node
+; User interface
+dependencies[] = jquery_update
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'seven'
+variables[date_default_timezone] = 'America/New_York'
+variables[filter_fallback_format] = 'plain_text'
+variables[jquery_update_compression_type] = 'min'
+variables[jquery_update_jquery_cdn] = 'google'
+variables[jquery_update_jquery_version] = '1.8'
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[theme_default] = 'bartik'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+
