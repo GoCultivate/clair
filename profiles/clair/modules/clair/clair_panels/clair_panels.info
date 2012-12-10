@@ -1,0 +1,12 @@
+name = CLAIR Panels
+description = CLAIR Panels settings and plugins
+core = 7.x
+package = CLAIR
+php = 5.2.4
+dependencies[] = ctools
+dependencies[] = panels
+features[ctools][] = panels:layouts:1
+features[features_api][] = api:1
+features[panels_layout][] = clone_of_full_over_left_rail
+features[panels_layout][] = full_over_left_and_right_rail
+features[panels_layout][] = full_over_right_rail
