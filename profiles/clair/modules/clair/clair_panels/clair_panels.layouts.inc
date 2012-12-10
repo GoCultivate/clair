@@ -13,7 +13,7 @@ function clair_panels_default_panels_layout() {
   $layout = new stdClass();
   $layout->disabled = FALSE; /* Edit this to true to make a default layout disabled initially */
   $layout->api_version = 1;
-  $layout->name = 'clone_of_full_over_left_rail';
+  $layout->name = 'full_over_left_rail';
   $layout->admin_title = 'Full over Left Rail';
   $layout->admin_description = '';
   $layout->category = 'CLAIR';
