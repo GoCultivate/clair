@@ -70,7 +70,7 @@ $.extend(Navbar.prototype, {
    * the height of the navbar changes.
    */
   setHeight: function() {
-    this.height = this.$navbar.outerHeight();
+    this.height = this.$navbar.height();
     this.$navbar.attr('data-offset-top', this.height);
     // Alter the padding on the top of the body element.
     // @todo, this should be moved to drupal.js and register for
