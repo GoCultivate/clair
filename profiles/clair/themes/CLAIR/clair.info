@@ -4,6 +4,8 @@ version = VERSION
 core = 7.x
 base theme = responsive_bartik
 
+stylesheets[all][] = css/text.css
+stylesheets[all][] = css/grid.css
 stylesheets[all][] = css/colors.css
 stylesheets[all][] = css/Aristo.css
 stylesheets[all][] = css/menu_style.css
