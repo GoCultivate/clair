@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CLAIR Blog feature.
+ */
+
+include_once 'clair_blog.features.inc';
