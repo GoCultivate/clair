@@ -2,6 +2,7 @@ name = CLAIR Panels
 description = Contains everything panel related, Plugin Configurations, Dependencies, etc.
 core = 7.x
 package = CLAIR
+php = 5.2.4
 dependencies[] = ctools_custom_content
 dependencies[] = page_manager
 dependencies[] = panelizer
