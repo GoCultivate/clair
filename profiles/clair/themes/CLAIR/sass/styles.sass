@@ -39,6 +39,11 @@ a
   .sf-menu li.sf-depth-1 ul.sf-megamenu
     width: auto
 
+// Float: left seems to be causing an issue with panels
+@media all and (min-width: 851px)
+  #content
+    float: none
+
 // Center logo and title on devices
 @media only screen and (min-width: 320px) and (max-width: 1024px)
   #main-menu
