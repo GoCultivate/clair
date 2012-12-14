@@ -24,8 +24,8 @@
     <div class="section col-2">
       <?php print render($navbar['navbar_navigation']); ?>
     </div>
-    <div class="section col-4 page-controls"></div>
-    <div class="section col-2">
+    <div class="section col-3 page-controls"></div>
+    <div class="section col-3">
       <?php if (!empty($navbar['navbar_user'])) : ?>
         <?php print render($navbar['navbar_user']); ?>
       <?php endif; ?>

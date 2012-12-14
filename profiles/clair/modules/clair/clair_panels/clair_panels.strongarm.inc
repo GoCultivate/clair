@@ -47,9 +47,9 @@ function clair_panels_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_taxonomy_term_tags';
   $strongarm->value = array(
-    'status' => 0,
-    'default' => 0,
-    'choice' => 0,
+    'status' => 1,
+    'default' => 1,
+    'choice' => 1,
   );
   $export['panelizer_defaults_taxonomy_term_tags'] = $strongarm;
 
