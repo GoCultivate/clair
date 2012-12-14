@@ -6,6 +6,6 @@ $plugin = array(
   'category' => t('Panopoly'),
   'theme' => 'boxton',
   'regions' => array(
-    'contentmain' => t('Content'),
+    'content_main' => t('Content'),
   ),
 );

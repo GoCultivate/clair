@@ -15,7 +15,7 @@
   <div class="bryant-flipped-container bryant-flipped-content-container clearfix">
     <div class="bryant-flipped-content bryant-flipped-content-region panel-panel">
       <div class="bryant-flipped-content-inner bryant-flipped-content-region-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
     <div class="bryant-flipped-sidebar bryant-flipped-content-region panel-panel">
@@ -24,5 +24,5 @@
       </div>
     </div>
   </div>
-    
+
 </div><!-- /.bryant-flipped -->

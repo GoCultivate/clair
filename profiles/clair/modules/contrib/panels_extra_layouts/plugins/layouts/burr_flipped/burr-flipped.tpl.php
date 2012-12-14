@@ -15,7 +15,7 @@
   <div class="burr-flipped-container burr-flipped-content-container clearfix">
     <div class="burr-flipped-content burr-flipped-content-region panel-panel">
       <div class="burr-flipped-content-inner burr-flipped-content-region-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
     <div class="burr-flipped-sidebar burr-flipped-content-region panel-panel">
@@ -24,5 +24,5 @@
       </div>
     </div>
   </div>
-    
+
 </div><!-- /.burr-flipped -->

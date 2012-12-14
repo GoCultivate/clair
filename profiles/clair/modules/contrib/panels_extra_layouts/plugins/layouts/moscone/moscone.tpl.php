@@ -26,7 +26,7 @@
     </div>
     <div class="moscone-column-content-region moscone-content panel-panel">
       <div class="moscone-column-content-region-inner moscone-content-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
   </div>

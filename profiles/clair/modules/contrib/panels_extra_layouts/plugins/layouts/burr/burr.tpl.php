@@ -20,9 +20,9 @@
     </div>
     <div class="burr-content burr-content-region panel-panel">
       <div class="burr-content-inner burr-content-region-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
   </div>
-    
+
 </div><!-- /.burr -->

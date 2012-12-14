@@ -21,7 +21,7 @@
   <div class="moscone-flipped-container moscone-flipped-column-content clearfix">
     <div class="moscone-flipped-column-content-region moscone-flipped-content panel-panel">
       <div class="moscone-flipped-column-content-region-inner moscone-flipped-content-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
     <div class="moscone-flipped-column-content-region moscone-flipped-sidebar panel-panel">

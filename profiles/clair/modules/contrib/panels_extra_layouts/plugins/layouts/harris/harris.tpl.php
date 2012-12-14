@@ -17,7 +17,7 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="harris-container harris-column-content clearfix">
     <div class="harris-column-content-region harris-column1 panel-panel">
       <div class="harris-column-content-region-inner harris-column1-inner panel-panel-inner">
@@ -26,7 +26,7 @@
     </div>
     <div class="harris-column-content-region harris-content panel-panel">
       <div class="harris-column-content-region-inner harris-content-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
     <div class="harris-column-content-region harris-column2 panel-panel">
@@ -35,5 +35,5 @@
       </div>
     </div>
   </div>
-  
+
 </div><!-- /.harris -->

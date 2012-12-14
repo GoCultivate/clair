@@ -10,6 +10,6 @@ $plugin = array(
     'header' => t('Header'),
     'column1' => t('First Column'),
     'column2' => t('Second Column'),
-    'contentmain' => t('Content'),
+    'content_main' => t('Content'),
   ),
 );

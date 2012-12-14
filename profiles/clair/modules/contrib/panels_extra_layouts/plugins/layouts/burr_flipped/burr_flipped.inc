@@ -8,6 +8,6 @@ $plugin = array(
   'css' => 'burr-flipped.css',
   'regions' => array(
     'sidebar' => t('Sidebar'),
-    'contentmain' => t('Content'),
+    'content_main' => t('Content'),
   ),
 );

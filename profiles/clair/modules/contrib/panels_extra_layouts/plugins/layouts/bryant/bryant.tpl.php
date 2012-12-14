@@ -20,9 +20,9 @@
     </div>
     <div class="bryant-content bryant-content-region panel-panel">
       <div class="bryant-content-inner bryant-content-region-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
   </div>
-    
+
 </div><!-- /.bryant -->

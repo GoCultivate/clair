@@ -17,11 +17,11 @@
       <?php print $content['header']; ?>
     </div>
   </div>
-  
+
   <div class="brenham-flipped-container brenham-flipped-column-content clearfix">
     <div class="brenham-flipped-column-content-region brenham-flipped-content panel-panel">
       <div class="brenham-flipped-column-content-region-inner brenham-flipped-content-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
     <div class="brenham-flipped-column-content-region brenham-flipped-sidebar panel-panel">
@@ -30,5 +30,5 @@
       </div>
     </div>
   </div>
-  
+
 </div><!-- /.brenham-flipped -->

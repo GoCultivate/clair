@@ -9,7 +9,7 @@ $plugin = array(
   'regions' => array(
     'header' => t('Header'),
     'sidebar' => t('Content Sidebar'),
-    'contentmain' => t('Content'),
+    'content_main' => t('Content'),
     'footer' => t('Footer'),
   ),
 );

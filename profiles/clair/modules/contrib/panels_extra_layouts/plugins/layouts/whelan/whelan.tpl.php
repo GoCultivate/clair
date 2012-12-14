@@ -20,7 +20,7 @@
     </div>
     <div class="whelan-column-content-region whelan-content panel-panel">
       <div class="whelan-column-content-region-inner whelan-content-inner panel-panel-inner">
-        <?php print $content['contentmain']; ?>
+        <?php print $content['content_main']; ?>
       </div>
     </div>
     <div class="whelan-column-content-region whelan-column2 panel-panel">
@@ -29,5 +29,5 @@
       </div>
     </div>
   </div>
-  
+
 </div><!-- /.whelan -->
