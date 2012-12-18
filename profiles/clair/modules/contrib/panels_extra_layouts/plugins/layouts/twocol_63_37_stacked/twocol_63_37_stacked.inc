@@ -8,7 +8,6 @@
  *
  *
  */
-?>
 
 // Plugin definition.
 $plugin = array(
