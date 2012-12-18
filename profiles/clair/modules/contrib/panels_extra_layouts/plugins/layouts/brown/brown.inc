@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file   brown.inc
+ * @date   Tue Dec 18 11:19:00 2012
+ * @brief  The panels layout plugin for the Brown panels layout.
+ *
+ *
+ */
+
 // Plugin definition
 $plugin = array(
   'title' => t('Brown'),

@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file   webb_flipped.inc
+ * @date   Tue Dec 18 9:15:00 2012
+ * @brief  The panels layout plugin for the webb_flipped panels layout.
+ *
+ *
+ */
+
 // Plugin definition
 $plugin = array(
   'title' => t('Webb Flipped'),

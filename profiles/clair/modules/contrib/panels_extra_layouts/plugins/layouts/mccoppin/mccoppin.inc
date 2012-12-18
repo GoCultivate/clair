@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file   mccoppin.inc
+ * @date   Tue Dec 18 11:03:00 2012
+ * @brief  The panels layout plugin for the McCoppin panels layout.
+ *
+ *
+ */
+
 // Plugin definition
 $plugin = array(
   'title' => t('McCoppin'),

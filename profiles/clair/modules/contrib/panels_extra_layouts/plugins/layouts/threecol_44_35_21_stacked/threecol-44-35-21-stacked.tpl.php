@@ -1,4 +1,14 @@
-<!-- -*-html-helper-*- -->
+<?php
+/**
+ * @file   threecol-44-35-21-stacked.tpl.php
+ * @author António P. P. Almeida <appa@perusio.net>
+ * @date   Tue Dec 17 10:59:00 2012
+ *
+ * @brief  Template for the three column 44/35/21 stacked layout.
+ *
+ *
+ */
+?>
 <div class="panel-display panel-threecol-44-35-21-stacked clear-block" <?php if (!empty($css_id)) { print "id=\"$css_id\"";} ?>>
 
   <div class="panel-panel line">

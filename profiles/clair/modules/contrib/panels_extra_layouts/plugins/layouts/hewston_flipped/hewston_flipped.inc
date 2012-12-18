@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file   hewston_flipped.inc
+ * @date   Tue Dec 18 11:03:00 2012
+ * @brief  The panels layout plugin for the Hewston Flipped panels layout.
+ *
+ *
+ */
+
 // Plugin definition
 $plugin = array(
   'title' => t('Hewston Flipped'),

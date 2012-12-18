@@ -1,5 +1,14 @@
-<!-- -*-html-helper-*- -->
-
+<?php
+/**
+ * @file   twocol-30-70-stacked.tpl.php
+ * @author António P. P. Almeida <appa@perusio.net>
+ * @date   Tue Dec 18 09:15:00 2012
+ *
+ * @brief  Template for the 30/70 panels layout.
+ *
+ *
+ */
+?>
 <div class="panel-display panel-twocol-30-70-stacked clear-block" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   <div class="panel-panel line">
     <div class="panel-panel unit panel-header lastUnit">

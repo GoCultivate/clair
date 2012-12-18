@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file   bryant_flipped_flipped.inc
+ * @date   Tue Dec 18 11:19:00 2012
+ * @brief  The panels layout plugin for the Bryant Flipped panels layout.
+ *
+ *
+ */
+
 // Plugin definition
 $plugin = array(
   'title' => t('Bryant Flipped'),

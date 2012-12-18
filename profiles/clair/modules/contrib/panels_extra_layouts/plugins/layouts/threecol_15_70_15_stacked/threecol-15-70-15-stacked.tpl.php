@@ -1,4 +1,14 @@
-<!-- -*-html-helper-*- -->
+<?php
+/**
+ * @file   threecol-15-70-15-stacked.tpl.php
+ * @author António P. P. Almeida <appa@perusio.net>
+ * @date   Tue Dec 18 9:29:00 2012
+ *
+ * @brief  Template for the 15/70/15 panels layout.
+ *
+ *
+ */
+?>
 
 <div class="panel-display panel-threecol-15-70-15-stacked clear-block" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   <div class="panel-panel line">

@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file   whelan.inc
+ * @date   Tue Dec 18 9:15:00 2012
+ * @brief  The panels layout plugin for a three column responsive panels layout.
+ *
+ *
+ */
+
 // Plugin definition
 $plugin = array(
   'title' => t('Whelan'),

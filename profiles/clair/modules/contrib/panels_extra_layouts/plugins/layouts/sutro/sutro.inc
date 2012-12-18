@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file   sutro.inc
+ * @date   Tue Dec 18 9:39:00 2012
+ * @brief  The panels layout plugin for the sutro panels layout.
+ *
+ *
+ */
+
 // Plugin definition
 $plugin = array(
   'title' => t('Sutro'),
