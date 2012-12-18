@@ -62,7 +62,6 @@ function clair_panels_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -98,7 +97,7 @@ function clair_panels_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-1'] = $pane;
     $display->panels['header'][0] = 'new-1';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
