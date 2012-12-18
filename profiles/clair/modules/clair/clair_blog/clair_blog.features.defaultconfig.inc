@@ -5,18 +5,6 @@
  */
 
 /**
- * Implements hook_defaultconfig_features().
- */
-function clair_blog_defaultconfig_features() {
-  return array(
-    'clair_blog' => array(
-      'context_default_contexts' => 'context_default_contexts',
-      'views_default_views' => 'views_default_views',
-    ),
-  );
-}
-
-/**
  * Implements hook_defaultconfig_context_default_contexts().
  */
 function clair_blog_defaultconfig_context_default_contexts() {
