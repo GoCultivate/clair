@@ -11,3 +11,9 @@ sites/sites.php
 
 # Ignore Sass files
 .sass-cache
+
+#Ignore Development modules
+coder
+devel
+dummyimage
+profiler_builder
