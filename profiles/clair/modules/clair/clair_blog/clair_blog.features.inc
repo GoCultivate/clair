@@ -30,21 +30,20 @@ function clair_blog_views_api() {
  */
 function clair_blog_flag_default_flags() {
   $flags = array();
-  // Exported flag: "Promoted".
-  $flags['promoted'] = array(
+  // Exported flag: "Promoted Article".
+  $flags['promoted_article'] = array(
     'content_type' => 'node',
-    'title' => 'Promoted',
+    'title' => 'Promoted Article',
     'global' => '1',
     'types' => array(
       0 => 'article',
-      1 => 'event',
     ),
-    'flag_short' => 'Promote This',
-    'flag_long' => 'This post will Appear at the top of all items',
-    'flag_message' => 'This post has been Promoted',
-    'unflag_short' => 'Remove Promoted',
-    'unflag_long' => 'Remove this post from your Promoted',
-    'unflag_message' => 'This post has been removed from your Promoted Items',
+    'flag_short' => 'Promote This Article',
+    'flag_long' => 'This Article will appear at the top of all items',
+    'flag_message' => 'This Article has been promoted',
+    'unflag_short' => 'Remove Promoted Article',
+    'unflag_long' => 'Remove this Article from promoted',
+    'unflag_message' => 'This Article has been removed from promoted Articles',
     'unflag_denied_text' => '',
     'link_type' => 'toggle',
     'roles' => array(
@@ -62,11 +61,11 @@ function clair_blog_flag_default_flags() {
     'show_on_teaser' => 1,
     'show_contextual_link' => 1,
     'i18n' => 0,
+    'api_version' => 2,
     'module' => 'clair_blog',
     'locked' => array(
       0 => 'name',
     ),
-    'api_version' => 2,
   );
   return $flags;
 
