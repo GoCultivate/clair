@@ -61,11 +61,11 @@ function clair_events_flag_default_flags() {
     'show_on_teaser' => 1,
     'show_contextual_link' => 1,
     'i18n' => 0,
-    'api_version' => 2,
     'module' => 'clair_events',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 2,
   );
   return $flags;
 
