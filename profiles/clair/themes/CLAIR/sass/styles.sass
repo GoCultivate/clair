@@ -1,6 +1,15 @@
 @import "compass"
 @import "sprites/*.png"
 
+///////////////////////////////////////////////////////////////////////////////////////
+// ##          ###    ##    ##  #######  ##     ## ########
+// ##         ## ##    ##  ##  ##     ## ##     ##    ##
+// ##        ##   ##    ####   ##     ## ##     ##    ##
+// ##       ##     ##    ##    ##     ## ##     ##    ##
+// ##       #########    ##    ##     ## ##     ##    ##
+// ##       ##     ##    ##    ##     ## ##     ##    ##
+// ######## ##     ##    ##     #######   #######     ##
+
 body
   font: normal 14px / 1.4 sans-serif
 h1, .node-teaser h2 a
@@ -92,21 +101,23 @@ a
 .social:hover
   +filter(grayscale(0%))
 .twitter
-  @include sprites-sprite(twitter)
+  +sprites-sprite(twitter)
 .facebook
-  @include sprites-sprite(facebook)
+  +sprites-sprite(facebook)
 .linkedin
-  @include sprites-sprite(linkedin)
+  +sprites-sprite(linkedin)
 .youtube
-  @include sprites-sprite(youtube)
+  +sprites-sprite(youtube)
 .googleplus
-  @include sprites-sprite(googleplus)
+  +sprites-sprite(googleplus)
 #footer li.last a.social
   padding-right: 12px
 
 #footer
-  border-top: 1px dashed #555
+  +box-shadow(inset 0px 1px 0px white)
+  border-top: 1px solid #555
   text-align: right
+  +text-shadow(0px 1px 0px white)
   #block-boxes-copyright, #block-menu-menu-footer
     clear: none
 #block-boxes-copyright
@@ -134,3 +145,22 @@ a
   margin: 0 auto
   text-align: center
   width: 80px
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ##     ##  #######  ########  ##     ## ##       ########     #######  ##     ## ######## ########  ########  #### ########  ########  ######
+// ###   ### ##     ## ##     ## ##     ## ##       ##          ##     ## ##     ## ##       ##     ## ##     ##  ##  ##     ## ##       ##    ##
+// #### #### ##     ## ##     ## ##     ## ##       ##          ##     ## ##     ## ##       ##     ## ##     ##  ##  ##     ## ##       ##
+// ## ### ## ##     ## ##     ## ##     ## ##       ######      ##     ## ##     ## ######   ########  ########   ##  ##     ## ######    ######
+// ##     ## ##     ## ##     ## ##     ## ##       ##          ##     ##  ##   ##  ##       ##   ##   ##   ##    ##  ##     ## ##             ##
+// ##     ## ##     ## ##     ## ##     ## ##       ##          ##     ##   ## ##   ##       ##    ##  ##    ##   ##  ##     ## ##       ##    ##
+// ##     ##  #######  ########   #######  ######## ########     #######     ###    ######## ##     ## ##     ## #### ########  ########  ######
+
+// Media Module button display
+
+#media-browser-page
+  a.button
+    display: inline
+
+.media-widget
+  a.launcher
+    color: white

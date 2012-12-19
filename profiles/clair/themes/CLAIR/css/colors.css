@@ -46,7 +46,8 @@ a:active {
 }
 #page-wrapper,
 #footer-wrapper {
-  background: #333;
+  background: #DDD;
+  color: #555;
 }
 .region-header,
 .region-header a,
