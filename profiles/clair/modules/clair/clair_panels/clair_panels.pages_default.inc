@@ -62,6 +62,7 @@ function clair_panels_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

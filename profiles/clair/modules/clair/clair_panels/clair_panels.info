@@ -14,7 +14,6 @@ dependencies[] = panels_breadcrumbs
 dependencies[] = panels_extra_layouts
 dependencies[] = panels_ipe
 dependencies[] = panels_mini
-
 dependencies[] = strongarm
 dependencies[] = system
 dependencies[] = views_content
