@@ -1,0 +1,10 @@
+name = CLAIR Theme
+description = Components related to theme layer
+core = 7.x
+package = CLAIR
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = theme_clair_settings
+features[variable][] = theme_ember_settings

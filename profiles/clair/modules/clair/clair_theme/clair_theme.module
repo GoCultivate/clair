@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Code for the CLAIR Theme feature.
+ */
+
+include_once 'clair_theme.features.inc';
+
+function clair_theme_init() {
+
+  $path = drupal_get_path('module', 'clair_themes');
+  drupal_add_css($path . '/css/slideshow.css', 'file');
+
+}

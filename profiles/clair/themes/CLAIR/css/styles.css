@@ -1,14 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Average|Lora|Rufina|Fjalla+One|Varela|Ledger);
 .sprites-sprite, .twitter, .facebook, .linkedin, .youtube, .googleplus { background: url('images/sprites-se8ca57532a.png') no-repeat; }
 
-body { font: normal 14px/1.4 sans-serif; }
+body { font-family: "Average" sans-serif; }
 
 h1, .node-teaser h2 a { color: #6c193f; }
 
-h1, h2, h3, h4, h5, h6, #site-name a { font-family: "HelveticaNeueW01-77BdCn 692722", sans-serif; text-transform: uppercase; }
+h2, h3, h4, h5, h6 { font-family: Fjalla One; text-transform: uppercase; }
 
 a:link, a:visited { -webkit-transition: 300ms; -moz-transition: 300ms; -o-transition: 300ms; transition: 300ms; }
 a.fc-event, a.contextual-links-trigger { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; }
 a:hover { text-decoration: none; }
+
+#header, #footer-wrapper, #skip-link, ul.contextual-links, ul.links, ul.primary, .item-list .pager, div.field-type-taxonomy-term-reference, div.messages, div.meta, p.comment-time, table, .breadcrumb, .ui-widget, .comment-form label { font-family: "Lato", Helvetica, Arial, sans-serif; }
 
 .sidebar h2 { text-shadow: none; }
 
@@ -22,9 +25,8 @@ a:hover { text-decoration: none; }
   .sf-menu li.sf-depth-1 ul.sf-megamenu { width: auto; } }
 @media all and (min-width: 851px) { #content { float: none; } }
 @media only screen and (min-width: 320px) and (max-width: 1024px) { #main-menu { position: relative; }
-  #logo, #name-and-slogan { display: block; position: relative; text-align: center; width: 100%; } }
-.region-sidebar-first { background: url(http://www.navigationarts.com/_res/img/bgNavLocal.png) no-repeat right 0; min-height: 350px; }
-
+  #logo, #name-and-slogan { display: block; position: relative; text-align: center; width: 100%; }
+  #logo a, #name-and-slogan a { text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.5); } }
 @media only screen and (max-width: 850px) { .region-sidebar-first { background: none; } }
 .sidebar .block { background-color: transparent; border: 0; padding: 15px 20px 15px 0; }
 
@@ -56,7 +58,7 @@ a:hover { text-decoration: none; }
 
 #footer li.last a.social { padding-right: 12px; }
 
-#footer { -webkit-box-shadow: inset 0px 1px 0px white; -moz-box-shadow: inset 0px 1px 0px white; box-shadow: inset 0px 1px 0px white; border-top: 1px solid #555555; text-align: right; text-shadow: 0px 1px 0px white; }
+#footer { -webkit-box-shadow: inset 0px 1px 0px white; -moz-box-shadow: inset 0px 1px 0px white; box-shadow: inset 0px 1px 0px white; border-top: 1px solid #888888; text-align: right; text-shadow: 0px 1px 0px white; }
 #footer #block-boxes-copyright, #footer #block-menu-menu-footer { clear: none; }
 
 #block-boxes-copyright { float: right; width: 200px; }
@@ -70,3 +72,12 @@ a:hover { text-decoration: none; }
 #media-browser-page a.button { display: inline; }
 
 .media-widget a.launcher { color: white; }
+
+table.sticky-header { margin-top: 45px; }
+
+.flexslider-views-slideshow-main-frame span { display: block; width: 100%; }
+.flexslider-views-slideshow-main-frame span a { background-color: rgba(0, 0, 0, 0.8); color: white; font-size: 45px; font-family: Fjalla One; padding: 10px 30px; position: absolute; text-transform: uppercase; }
+
+div#panels-ipe-control-container { background-color: rgba(0, 0, 0, 0.4); }
+
+.views-field-title a { font-family: "Lato" sans-serif; }

@@ -1,21 +1,21 @@
+///////////
+// Imports
+///////////
+
 @import "compass"
 @import "sprites/*.png"
+@import url(http://fonts.googleapis.com/css?family=Lato|Average|Lora|Rufina|Fjalla+One|Varela|Ledger)
 
-///////////////////////////////////////////////////////////////////////////////////////
-// ##          ###    ##    ##  #######  ##     ## ########
-// ##         ## ##    ##  ##  ##     ## ##     ##    ##
-// ##        ##   ##    ####   ##     ## ##     ##    ##
-// ##       ##     ##    ##    ##     ## ##     ##    ##
-// ##       #########    ##    ##     ## ##     ##    ##
-// ##       ##     ##    ##    ##     ## ##     ##    ##
-// ######## ##     ##    ##     #######   #######     ##
+///////////
+// Global Text
+///////////
 
 body
-  font: normal 14px / 1.4 sans-serif
+  font-family: "Average" sans-serif
 h1, .node-teaser h2 a
   color: #6C193F
-h1, h2, h3, h4, h5, h6, #site-name a
-  font-family: "HelveticaNeueW01-77BdCn 692722",sans-serif
+h2, h3, h4, h5, h6
+  font-family: Fjalla One
   text-transform: uppercase
 a
   &:link, &:visited
@@ -24,8 +24,28 @@ a
     +transition(none)
   &:hover
     text-decoration: none
+
+#header,
+#footer-wrapper,
+#skip-link,
+ul.contextual-links,
+ul.links, ul.primary,
+.item-list .pager,
+div.field-type-taxonomy-term-reference,
+div.messages,
+div.meta,
+p.comment-time,
+table,
+.breadcrumb,
+.ui-widget,
+.comment-form label
+  font-family: "Lato", Helvetica, Arial, sans-serif
 .sidebar h2 // Bartik override
   text-shadow: none
+
+///////////
+// Regions
+///////////
 
 #header
   box-shadow: rgba(0, 0, 0, 0.75) 0 0 5px
@@ -62,10 +82,8 @@ a
     position: relative
     text-align: center
     width: 100%
-
-.region-sidebar-first
-  background: url(http://www.navigationarts.com/_res/img/bgNavLocal.png) no-repeat right 0 // Steal sidebar shadow from na.com
-  min-height: 350px
+    a
+      +text-shadow(0px -2px 1px rgba(0, 0, 0, .5))
 
 @media only screen and (max-width: 850px)
   .region-sidebar-first
@@ -91,7 +109,9 @@ a
   float: left
   margin-right: 1em
 
-.social // Footer
+// Footer
+
+.social
   border-right: 0 !important
   text-indent: -9999px
 #footer .first-social-item
@@ -115,7 +135,7 @@ a
 
 #footer
   +box-shadow(inset 0px 1px 0px white)
-  border-top: 1px solid #555
+  border-top: 1px solid #888
   text-align: right
   +text-shadow(0px 1px 0px white)
   #block-boxes-copyright, #block-menu-menu-footer
@@ -134,6 +154,10 @@ a
     width: 100%
 
 #block-system-powered-by span
+  display: block
+  margin: 0 auto
+  text-align: center
+  width: 80px
   a
     background: url('images/drupal.png') no-repeat
     display: block
@@ -141,21 +165,9 @@ a
     margin: 0 auto
     text-indent: -9999px
     width: 40px
-  display: block
-  margin: 0 auto
-  text-align: center
-  width: 80px
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ##     ##  #######  ########  ##     ## ##       ########     #######  ##     ## ######## ########  ########  #### ########  ########  ######
-// ###   ### ##     ## ##     ## ##     ## ##       ##          ##     ## ##     ## ##       ##     ## ##     ##  ##  ##     ## ##       ##    ##
-// #### #### ##     ## ##     ## ##     ## ##       ##          ##     ## ##     ## ##       ##     ## ##     ##  ##  ##     ## ##       ##
-// ## ### ## ##     ## ##     ## ##     ## ##       ######      ##     ## ##     ## ######   ########  ########   ##  ##     ## ######    ######
-// ##     ## ##     ## ##     ## ##     ## ##       ##          ##     ##  ##   ##  ##       ##   ##   ##   ##    ##  ##     ## ##             ##
-// ##     ## ##     ## ##     ## ##     ## ##       ##          ##     ##   ## ##   ##       ##    ##  ##    ##   ##  ##     ## ##       ##    ##
-// ##     ##  #######  ########   #######  ######## ########     #######     ###    ######## ##     ## ##     ## #### ########  ########  ######
-
-// Media Module button display
+// Fixes to make Ember look right
+// Media Module
 
 #media-browser-page
   a.button
@@ -164,3 +176,35 @@ a
 .media-widget
   a.launcher
     color: white
+
+// Table.sticky
+
+table.sticky-header
+  margin-top: 45px
+
+// Flexslider
+
+.flexslider-views-slideshow-main-frame
+  span
+    display: block
+    width: 100%
+    a
+      background-color: rgba(0,0,0,.8)
+      color: #fff
+      font-size: 45px
+      font-family: Fjalla One
+      padding: 10px 30px
+      position: absolute
+      text-transform: uppercase
+
+// Panels
+
+div#panels-ipe-control-container
+  background-color: rgba(0, 0, 0, 0.4)
+
+// Blog
+
+.views-field-title a
+  font-family: "Lato" sans-serif
+
+
