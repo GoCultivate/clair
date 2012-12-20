@@ -15,6 +15,13 @@ function clair_admin_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function clair_admin_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function clair_admin_node_info() {

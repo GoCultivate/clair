@@ -69,7 +69,7 @@ function clair_panels_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'half';
     $pane->type = 'views';
-    $pane->subtype = 'frontpage';
+    $pane->subtype = 'clair_front_page';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -89,9 +89,7 @@ function clair_panels_default_page_manager_pages() {
       'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
+    $pane->style = array();
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
