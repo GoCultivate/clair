@@ -17,13 +17,7 @@ function clair_wysiwyg_filter_default_formats() {
     'cache' => '1',
     'status' => '1',
     'weight' => '0',
-    'filters' => array(
-      'filter_html_escape' => array(
-        'weight' => '-10',
-        'status' => '1',
-        'settings' => array(),
-      ),
-    ),
+    'filters' => array(),
   );
 
   // Exported format: Plain text.
@@ -70,11 +64,6 @@ function clair_wysiwyg_filter_default_formats() {
           'filter_html_help' => 1,
           'filter_html_nofollow' => 1,
         ),
-      ),
-      'filter_html_escape' => array(
-        'weight' => '-10',
-        'status' => '1',
-        'settings' => array(),
       ),
       'filter_autop' => array(
         'weight' => '0',
