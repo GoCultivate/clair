@@ -5,7 +5,7 @@ body { font-family: "Average" sans-serif; }
 
 h1, .node-teaser h2 a { color: #6c193f; }
 
-h2, h3, h4, h5, h6 { font-family: Fjalla One; text-transform: uppercase; }
+h1, h2, h3, h4, h5, h6 { font-family: Fjalla One; text-transform: uppercase; }
 
 a:link, a:visited { -webkit-transition: 300ms; -moz-transition: 300ms; -o-transition: 300ms; transition: 300ms; }
 a.fc-event, a.contextual-links-trigger { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; }
@@ -15,18 +15,20 @@ a:hover { text-decoration: none; }
 
 .sidebar h2 { text-shadow: none; }
 
-#header { box-shadow: rgba(0, 0, 0, 0.75) 0 0 5px; position: relative; }
+#header, #footer-wrapper { box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px; position: relative; }
 
 .region-header { border: none; float: none; margin: 0; }
 
 #main-menu { bottom: 0; position: absolute; right: 0; }
 
+#name-and-slogan h1 { font-family: "Lato" sans-serif; }
+#name-and-slogan a { text-shadow: 0px 1px 1px white; }
+
 @media only screen and (max-width: 480px) and (min-width: 320px) { .sf-menu ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column { float: none; width: 50%; }
   .sf-menu li.sf-depth-1 ul.sf-megamenu { width: auto; } }
 @media all and (min-width: 851px) { #content { float: none; } }
 @media only screen and (min-width: 320px) and (max-width: 1024px) { #main-menu { position: relative; }
-  #logo, #name-and-slogan { display: block; position: relative; text-align: center; width: 100%; }
-  #logo a, #name-and-slogan a { text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.5); } }
+  #logo, #name-and-slogan { display: block; position: relative; text-align: center; width: 100%; } }
 @media only screen and (max-width: 850px) { .region-sidebar-first { background: none; } }
 .sidebar .block { background-color: transparent; border: 0; padding: 15px 20px 15px 0; }
 

@@ -88,12 +88,12 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
-  <?php if ($display_submitted): ?>
+<!--   <?php if ($display_submitted): ?>
     <footer class="meta submitted">
       <?php print $user_picture; ?>
       <?php print $submitted; ?>
     </footer>
-  <?php endif; ?>
+  <?php endif; ?> -->
 
   <div class="content clearfix"<?php print $content_attributes; ?>>
     <?php
