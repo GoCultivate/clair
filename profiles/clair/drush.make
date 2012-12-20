@@ -23,15 +23,6 @@ projects[date][subdir] = "contrib"
 projects[coder][version] = "1.2"
 projects[coder][subdir] = "contrib"
 
-projects[devel][version] = "1.3"
-projects[devel][subdir] = "contrib"
-
-projects[profiler_builder][version] = "1.0-rc2"
-projects[profiler_builder][subdir] = "contrib"
-
-projects[dummyimage][version] = "1.4"
-projects[dummyimage][subdir] = "contrib"
-
 projects[features][version] = "1.0"
 projects[features][subdir] = "contrib"
 
