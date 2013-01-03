@@ -380,10 +380,16 @@ function clair_events_field_default_fields() {
             'og_behavior' => array(
               'status' => TRUE,
             ),
+            'views-select-list' => array(
+              'status' => 0,
+            ),
           ),
           'membership_type' => 'og_membership_type_default',
+          'sort' => array(
+            'type' => 'none',
+          ),
           'target_bundles' => array(
-            0 => 'collection',
+            'collection' => 'collection',
           ),
         ),
         'handler_submit' => 'Change handler',

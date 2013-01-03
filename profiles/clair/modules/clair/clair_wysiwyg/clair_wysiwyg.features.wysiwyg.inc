@@ -13,7 +13,7 @@ function clair_wysiwyg_wysiwyg_default_profiles() {
   // Exported profile: wyiwyg
   $profiles['wyiwyg'] = array(
     'format' => 'wyiwyg',
-    'editor' => 'tinymce',
+    'editor' => 'ckeditor',
     'settings' => array(
       'default' => 1,
       'user_choose' => 0,
@@ -22,17 +22,19 @@ function clair_wysiwyg_wysiwyg_default_profiles() {
       'language' => 'en',
       'buttons' => array(
         'default' => array(
-          'bold' => 1,
-          'italic' => 1,
-          'bullist' => 1,
-          'numlist' => 1,
-          'link' => 1,
-          'unlink' => 1,
-          'blockquote' => 1,
-          'code' => 1,
+          'Bold' => 1,
+          'Italic' => 1,
+          'Underline' => 1,
+          'BulletedList' => 1,
+          'NumberedList' => 1,
+          'Indent' => 1,
+          'Undo' => 1,
+          'Redo' => 1,
+          'Link' => 1,
+          'Unlink' => 1,
         ),
-        'xhtmlxtras' => array(
-          'cite' => 1,
+        'drupal' => array(
+          'media' => 1,
         ),
       ),
       'toolbar_loc' => 'top',
@@ -46,8 +48,8 @@ function clair_wysiwyg_wysiwyg_default_profiles() {
       'apply_source_formatting' => 0,
       'paste_auto_cleanup_on_paste' => 0,
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
-      'css_setting' => 'self',
-      'css_path' => '%t/../../themes/responsive_bartik/css/style.css',
+      'css_setting' => 'theme',
+      'css_path' => '',
       'css_classes' => '',
     ),
     'rdf_mapping' => array(),
