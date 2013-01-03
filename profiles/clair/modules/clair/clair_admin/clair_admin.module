@@ -5,3 +5,19 @@
  */
 
 include_once 'clair_admin.features.inc';
+
+/**
+ * Implements hook_node_presave().
+ * We are enabling in-place pane editor automatically on all nodes.
+ */
+function clair_admin_node_presave($node){
+  $node->panelizer->pipeline = 'ipe';
+}
+
+/**
+ * Implements hook_form_alter().
+ * Promote to Front page will be substituted with copy to let the user expose the node
+ */
+function clair_admin_form_alter(&$form, &$form_state, $form_id){
+  $form['workflow']['node_options']['#options']['promote'] = 'Visible to Website';
+}
