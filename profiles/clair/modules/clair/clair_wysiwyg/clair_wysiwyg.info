@@ -1,0 +1,14 @@
+name = CLAIR WYSIWYG
+core = 7.x
+package = CLAIR
+php = 5.2.4
+dependencies[] = features
+dependencies[] = media
+dependencies[] = wysiwyg
+features[features_api][] = api:1
+features[filter][] = html
+features[filter][] = plain_text
+features[filter][] = wyiwyg
+features[user_permission][] = use text format html
+features[user_permission][] = use text format wyiwyg
+features[wysiwyg][] = wyiwyg

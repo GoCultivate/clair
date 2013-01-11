@@ -1,0 +1,38 @@
+.view-display-id-mini_calendar {
+    margin: 0 auto;
+    font-size: 10px;
+}
+.view-display-id-mini_calendar .fc-header-title h2 {
+    white-space: normal !important;
+}
+.view-display-id-mini_calendar .fc-view-month .fc-event,
+.view-display-id-mini_calendar .fc-view-agendaWeek .fc-event {
+    font-size: 0;
+    overflow: hidden;
+    height: 10px;
+}
+.view-display-id-mini_calendar .fc-view-agendaWeek .fc-event-vert {
+    font-size: 0;
+    overflow: hidden;
+    width: 2px !important;
+}
+.view-display-id-mini_calendar .fc-agenda-axis {
+    width: 25px !important;
+    font-size: .7em;
+}
+
+.view-display-id-mini_calendar .fc-button-content {
+    padding: 0;
+}
+.view-display-id-mini_calendar .fc-event-default,
+.view-display-id-mini_calendar .fc-event-default .fc-event-skin,
+.view-display-id-mini_calendar .fc-event-default .fc-event-time,
+.view-display-id-mini_calendar .fc-event-default a {
+    border-color: #F87C03;
+    border-style: solid;
+    background-color: #F87C03;
+    color: white;
+}
+
+
+

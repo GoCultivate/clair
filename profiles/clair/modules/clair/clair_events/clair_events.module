@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Code for the CLAIR Events feature.
+ */
+
+include_once 'clair_events.features.inc';
+
+function clair_events_init() {
+  $path = drupal_get_path('module', 'clair_events');
+  // Adds a mini calendar css theme.
+  drupal_add_css($path . '/css/mini_calendar.css', 'file');
+}

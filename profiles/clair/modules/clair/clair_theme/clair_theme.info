@@ -1,0 +1,14 @@
+name = CLAIR Theme
+description = Components related to theme layer
+core = 7.x
+package = CLAIR
+php = 5.2.4
+dependencies[] = ctools
+dependencies[] = flexslider
+dependencies[] = strongarm
+features[ctools][] = flexslider:flexslider_default_preset:1
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[flexslider_optionset][] = image_gallery
+features[variable][] = theme_clair_settings
+features[variable][] = theme_ember_settings

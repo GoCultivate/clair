@@ -1,0 +1,19 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+sites/sites.php
+
+# Ignore Mac folder configuration file
+.DS_Store
+
+# Ignore Sass files
+.sass-cache
+
+#Ignore Development modules
+coder
+devel
+dummyimage
+profiler_builder
