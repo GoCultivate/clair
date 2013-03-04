@@ -1,5 +1,5 @@
 ; Packaging information for clair
-name = "CLAIR"
+name = CLAIR
 description = "Collections and Internal Records management system"
 exclusive = "1"
 core = "7.x"
@@ -537,4 +537,3 @@ variables[views_ui_custom_theme] = 'seven'
 variables[views_ui_show_advanced_help_warning] = 1
 variables[views_ui_show_preview_information] = 1
 variables[views_ui_show_sql_query_where] = 'above'
-
