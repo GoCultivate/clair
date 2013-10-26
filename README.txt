@@ -28,3 +28,6 @@ for the following feature set:
 - Images, Slideshows, and (shortly!) Galleries
 - Workflows
 - More
+
+Note: the 7.x-2.x branch is being developed as an installation profile and 
+is under active development. The 7.x-1.x branch is not currently supported.
