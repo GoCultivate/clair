@@ -4,13 +4,12 @@ api = "2"
 ; comment this out in to use on drupal.org
 projects[drupal][version] = "7.x"
 
+; Get the CLAIR profile (which includes the CLAIR modules).
+libraries[clair][download][type] = "git"
+libraries[clair][download][url] = "https://github.com/mraichelson/clair.git"
+libraries[clair][download][destination] = "profiles"
+
 ; Modules
-projects[clair_blog][version] = "0.2"
-projects[clair_blog][subdir] = "contrib"
-
-projects[clair_events][version] = "0.4"
-projects[clair_events][subdir] = "contrib"
-
 projects[ctools][version] = "1.2"
 projects[ctools][subdir] = "contrib"
 
@@ -20,8 +19,8 @@ projects[context][subdir] = "contrib"
 projects[date][version] = "2.6"
 projects[date][subdir] = "contrib"
 
-projects[coder][version] = "1.2"
-projects[coder][subdir] = "contrib"
+; projects[coder][version] = "1.2"
+; projects[coder][subdir] = "contrib"
 
 projects[features][version] = "1.0"
 projects[features][subdir] = "contrib"
@@ -95,31 +94,14 @@ projects[views_slideshow][subdir] = "contrib"
 projects[defaultconfig][version] = "1.0-alpha9"
 projects[defaultconfig][subdir] = "contrib"
 
-; TODO modules without versions
-projects[clair_admin][version] = "" ; TODO add version
-projects[clair_admin][subdir] = "clair"
-
-projects[clair_groups][version] = "" ; TODO add version
-projects[clair_groups][subdir] = "clair"
-
-projects[clair_panels][version] = "" ; TODO add version
-projects[clair_panels][subdir] = "clair"
-
-projects[clair_theme][version] = "" ; TODO add version
-projects[clair_theme][subdir] = "clair"
-
-projects[clair_wysiwyg][version] = "" ; TODO add version
-projects[clair_wysiwyg][subdir] = "clair"
-
-projects[panels_extra_layouts][version] = "7.x-2.x-dev" ;
+projects[panels_extra_layouts][version] = "2.x-dev";
 projects[panels_extra_layouts][subdir] = "contrib"
-
 
 ; Themes
 ;
-projects[][type] = "theme"
-projects[][version] = "7.17"
-projects[][subdir] = "contrib"
+; projects[][type] = "theme"
+; projects[][version] = "7.17"
+; projects[][subdir] = "contrib"
 ; ember
 projects[ember][type] = "theme"
 projects[ember][version] = "1.0-alpha4"
@@ -132,35 +114,35 @@ projects[responsive_bartik][subdir] = "contrib"
 ; Libraries
 libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][type] = "library"
-libraries[flexslider][destination] = "libraries"
+libraries[flexslider][destination] = "sites/all/libraries"
 libraries[flexslider][download][type] = "git"
 libraries[flexslider][download][url] = "git://github.com/woothemes/FlexSlider.git" ;
 
 libraries[fullcalendar][directory_name] = "fullcalendar"
 libraries[fullcalendar][type] = "library"
-libraries[fullcalendar][destination] = "libraries"
+libraries[fullcalendar][destination] = "sites/all/libraries"
 libraries[fullcalendar][download][type] = "get"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.4.zip" ;
 
 libraries[jquery.cycle][directory_name] = "jquery.cycle"
 libraries[jquery.cycle][type] = "library"
-libraries[jquery.cycle][destination] = "libraries"
+libraries[jquery.cycle][destination] = "sites/all/libraries"
 libraries[jquery.cycle][download][type] = "get"
 libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js" ;
 
 libraries[profiler][directory_name] = "profiler"
 libraries[profiler][type] = "library"
-libraries[profiler][destination] = "libraries"
+libraries[profiler][destination] = "sites/all/libraries"
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.x-dev.tar.gz"
 
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][type] = "library"
-libraries[tinymce][destination] = "libraries"
+libraries[tinymce][destination] = "sites/all/libraries"
 libraries[tinymce][download][type] = "git"
 libraries[tinymce][download][url] = "git://github.com/woothemes/FlexSlider.git" ;
 
 
 ; Patches
-projects[responsive_bartik][patch][] = "http://drupal.org/files/navbar-logout_link_should_not_clear_on_tablets_fixed-1" ;
+; projects[responsive_bartik][patch][] = "http://drupal.org/files/navbar-logout_link_should_not_clear_on_tablets_fixed-1" ;
 projects[responsive_bartik][patch][] = "http://drupal.org/files/offset-issue-1852164-3.patch" ;
