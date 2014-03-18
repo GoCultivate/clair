@@ -70,4 +70,3 @@ libraries[tinymce][download][url] = "git://github.com/woothemes/FlexSlider.git"
 ; Patches
 ; Fix an error that causes drush site-install to blow out
 projects[drupal][patch][] = https://drupal.org/files/1093420-22.patch
-; projects[responsive_bartik][patch][] = "http://drupal.org/files/navbar-logout_link_should_not_clear_on_tablets_fixed-1"
