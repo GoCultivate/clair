@@ -23,7 +23,7 @@ projects[og][version] = 2.0-beta3
 projects[diff][version] = 3.2
 projects[entity][version] = 1.0-rc3
 projects[libraries][version] = 2.0
-projects[navbar][version] = 1.0-alpha3
+projects[navbar][version] = 1.4
 projects[panels_breadcrumbs][version] = 1.6
 projects[pathauto][version] = 1.2
 projects[strongarm][version] = 2.0
@@ -71,4 +71,3 @@ libraries[tinymce][download][url] = "git://github.com/woothemes/FlexSlider.git"
 ; Fix an error that causes drush site-install to blow out
 projects[drupal][patch][] = https://drupal.org/files/1093420-22.patch
 ; projects[responsive_bartik][patch][] = "http://drupal.org/files/navbar-logout_link_should_not_clear_on_tablets_fixed-1"
-; projects[responsive_bartik][patch][] = "http://drupal.org/files/offset-issue-1852164-3.patch"
