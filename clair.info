@@ -55,6 +55,7 @@ dependencies[] = date_api
 dependencies[] = date_popup
 dependencies[] = date_views
 ; Dummy image
+; TODO: remove this
 dependencies[] = dummyimage
 ; Fields
 dependencies[] = entityreference
