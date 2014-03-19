@@ -13,9 +13,9 @@ projects[ctools][version] = 1.4
 projects[context][version] = 3.2
 projects[date][version] = 2.7
 ; TODO: can FEATURES be upgraded to 2.0?
-projects[features][version] = 1.0
+projects[features][version] = 2.0
 projects[entityreference][version] = 1.1
-; TODO: can FLAG be upgraded to 3.0?
+; Flags will need to be recreated if we choose to move to Flag 7.x-3.x.
 projects[flag][version] = 2.0
 projects[flexslider][version] = 2.0-alpha3
 projects[flexslider_views_slideshow][version] = 2.x-dev
