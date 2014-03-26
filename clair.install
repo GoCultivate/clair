@@ -9,7 +9,7 @@
  */
 function clair_install() {
   // Enable some clair blocks.
-  $default_theme = 'clair';
+  $default_theme = 'clair_theme';
   $admin_theme = 'ember';
   // disable all themes
   db_update('system')
