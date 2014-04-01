@@ -22,17 +22,17 @@ body.overlay {
   border-bottom: 1px solid #ccc;
 }
 #header {
-  background-color: #DDD;
+  background-color: #eee;
 }
 a {
-  color: #dd4310;
+  color: #bed730;
 }
 a:hover,
 a:focus {
-  color: #ff4e14;
+  color: #bed730;
 }
 a:active {
-  color: #fe7649;
+  color: #bed730;
 }
 .sidebar .block {
   background-color: #ccc;
@@ -40,7 +40,7 @@ a:active {
 }
 #page-wrapper,
 #footer-wrapper {
-  background: #DDD;
+  background: #eee;
   color: #666;
 }
 .region-header,
