@@ -12,8 +12,7 @@ defaults[projects][subdir] = contrib
 projects[ctools][version] = 1.4
 projects[context][version] = 3.2
 projects[date][version] = 2.7
-; TODO: can FEATURES be upgraded to 2.0?
-projects[features][version] = 1.0
+projects[features][version] = 2.0
 projects[entityreference][version] = 1.1
 ; Flags will need to be recreated if we choose to move to Flag 7.x-3.x.
 projects[flag][version] = 2.0
@@ -57,12 +56,28 @@ libraries[flexslider][download][url] = "git://github.com/woothemes/FlexSlider.gi
 libraries[fullcalendar][directory_name] = "fullcalendar"
 libraries[fullcalendar][type] = "library"
 libraries[fullcalendar][download][type] = "get"
-libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.4.zip"
+libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
+libraries[fullcalendar][download][subtree] = "fullcalendar-1.6.4/fullcalendar"
 
 libraries[jquery.cycle][directory_name] = "jquery.cycle"
 libraries[jquery.cycle][type] = "library"
 libraries[jquery.cycle][download][type] = "get"
 libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
+
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.7.1.zip"
+
+libraries[backbone][directory_name] = "backbone"
+libraries[backbone][type] = "library"
+libraries[backbone][download][type] = "get"
+libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.0.0.zip"
+
+libraries[underscore][directory_name] = "underscore"
+libraries[underscore][type] = "library"
+libraries[underscore][download][type] = "get"
+libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/master.zip"
 
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][type] = "library"
