@@ -81,8 +81,14 @@ libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/
 
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][type] = "library"
-libraries[tinymce][download][type] = "git"
-libraries[tinymce][download][url] = "git://github.com/woothemes/FlexSlider.git"
+libraries[tinymce][download][type] = "get"
+libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0.21.zip"
+libraries[tinymce][download][subtree] = "tinymce/js/tinymce"
+
+libraries[ckeditor][directory_name] = "ckeditor"
+libraries[ckeditor][type] = "library"
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.zip"
 	
 ; Patches
 ; Fix an error that causes drush site-install to blow out

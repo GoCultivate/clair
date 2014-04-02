@@ -14,7 +14,7 @@ function clair_wysiwyg_user_default_permissions() {
   $permissions['use text format html'] = array(
     'name' => 'use text format html',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'filter',
   );
@@ -23,10 +23,10 @@ function clair_wysiwyg_user_default_permissions() {
   $permissions['use text format wyiwyg'] = array(
     'name' => 'use text format wyiwyg',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'content creator',
-      2 => 'editor',
-      3 => 'publisher',
+      'administrator' => 'administrator',
+      'content creator' => 'content creator',
+      'editor' => 'editor',
+      'publisher' => 'publisher',
     ),
     'module' => 'filter',
   );

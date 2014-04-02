@@ -21,7 +21,7 @@ function clair_events_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_event';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_default_mode_event'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -42,7 +42,7 @@ function clair_events_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_form_location_event';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_form_location_event'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -56,7 +56,7 @@ function clair_events_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_event';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_subject_field_event'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -64,7 +64,6 @@ function clair_events_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__event';
   $strongarm->value = array(
-    'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
@@ -83,7 +82,6 @@ function clair_events_strongarm() {
           'weight' => '5',
         ),
       ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__event'] = $strongarm;
@@ -93,18 +91,18 @@ function clair_events_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'fullcalendar_options';
   $strongarm->value = array(
-    'firstHour' => TRUE,
-    'minTime' => TRUE,
-    'maxTime' => TRUE,
-    'slotMinutes' => TRUE,
-    'defaultEventMinutes' => TRUE,
-    'allDaySlot' => TRUE,
-    'weekends' => TRUE,
-    'lazyFetching' => TRUE,
-    'disableDragging' => TRUE,
-    'disableResizing' => TRUE,
-    'dragRevertDuration' => TRUE,
-    'dayClick' => TRUE,
+    'firstHour' => 'true',
+    'minTime' => 'true',
+    'maxTime' => 'true',
+    'slotMinutes' => 'true',
+    'defaultEventMinutes' => 'true',
+    'allDaySlot' => 'true',
+    'weekends' => 'true',
+    'lazyFetching' => 'true',
+    'disableDragging' => 'true',
+    'disableResizing' => 'true',
+    'dragRevertDuration' => 'true',
+    'dayClick' => 'true',
   );
   $export['fullcalendar_options'] = $strongarm;
 
@@ -143,7 +141,7 @@ function clair_events_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_event';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['node_submitted_event'] = $strongarm;
 
   return $export;

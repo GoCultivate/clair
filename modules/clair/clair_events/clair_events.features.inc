@@ -7,12 +7,10 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function clair_events_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function clair_events_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
-  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -21,8 +19,8 @@ function clair_events_ctools_plugin_api() {
 /**
  * Implements hook_views_api().
  */
-function clair_events_views_api() {
-  return array("version" => "3.0");
+function clair_events_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }
 
 /**
@@ -34,7 +32,7 @@ function clair_events_flag_default_flags() {
   $flags['promoted_event'] = array(
     'content_type' => 'node',
     'title' => 'Promoted Event',
-    'global' => '1',
+    'global' => 1,
     'types' => array(
       0 => 'event',
     ),
@@ -48,10 +46,10 @@ function clair_events_flag_default_flags() {
     'link_type' => 'toggle',
     'roles' => array(
       'flag' => array(
-        0 => '3',
+        0 => 3,
       ),
       'unflag' => array(
-        0 => '3',
+        0 => 3,
       ),
     ),
     'weight' => 0,

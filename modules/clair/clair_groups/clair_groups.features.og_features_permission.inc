@@ -41,11 +41,6 @@ function clair_groups_og_features_default_permissions() {
     'roles' => array(),
   );
 
-  // Exported og permission: 'node:collection:create image_display_slideshow content'
-  $permissions['node:collection:create image_display_slideshow content'] = array(
-    'roles' => array(),
-  );
-
   // Exported og permission: 'node:collection:create object content'
   $permissions['node:collection:create object content'] = array(
     'roles' => array(),
@@ -61,11 +56,6 @@ function clair_groups_og_features_default_permissions() {
     'roles' => array(),
   );
 
-  // Exported og permission: 'node:collection:delete any image_display_slideshow content'
-  $permissions['node:collection:delete any image_display_slideshow content'] = array(
-    'roles' => array(),
-  );
-
   // Exported og permission: 'node:collection:delete any object content'
   $permissions['node:collection:delete any object content'] = array(
     'roles' => array(),
@@ -78,11 +68,6 @@ function clair_groups_og_features_default_permissions() {
 
   // Exported og permission: 'node:collection:delete own event content'
   $permissions['node:collection:delete own event content'] = array(
-    'roles' => array(),
-  );
-
-  // Exported og permission: 'node:collection:delete own image_display_slideshow content'
-  $permissions['node:collection:delete own image_display_slideshow content'] = array(
     'roles' => array(),
   );
 
@@ -141,11 +126,6 @@ function clair_groups_og_features_default_permissions() {
     'roles' => array(),
   );
 
-  // Exported og permission: 'node:collection:update any image_display_slideshow content'
-  $permissions['node:collection:update any image_display_slideshow content'] = array(
-    'roles' => array(),
-  );
-
   // Exported og permission: 'node:collection:update any object content'
   $permissions['node:collection:update any object content'] = array(
     'roles' => array(),
@@ -178,11 +158,6 @@ function clair_groups_og_features_default_permissions() {
 
   // Exported og permission: 'node:collection:update field_image field'
   $permissions['node:collection:update field_image field'] = array(
-    'roles' => array(),
-  );
-
-  // Exported og permission: 'node:collection:update field_media field'
-  $permissions['node:collection:update field_media field'] = array(
     'roles' => array(),
   );
 
@@ -230,11 +205,6 @@ function clair_groups_og_features_default_permissions() {
     'roles' => array(),
   );
 
-  // Exported og permission: 'node:collection:update own image_display_slideshow content'
-  $permissions['node:collection:update own image_display_slideshow content'] = array(
-    'roles' => array(),
-  );
-
   // Exported og permission: 'node:collection:update own object content'
   $permissions['node:collection:update own object content'] = array(
     'roles' => array(),
@@ -243,18 +213,18 @@ function clair_groups_og_features_default_permissions() {
   // Exported og permission: 'node:collection:view body field'
   $permissions['node:collection:view body field'] = array(
     'roles' => array(
-      'non-member' => 'non-member',
-      'member' => 'member',
       'administrator member' => 'administrator member',
+      'member' => 'member',
+      'non-member' => 'non-member',
     ),
   );
 
   // Exported og permission: 'node:collection:view field_collection_image field'
   $permissions['node:collection:view field_collection_image field'] = array(
     'roles' => array(
-      'non-member' => 'non-member',
-      'member' => 'member',
       'administrator member' => 'administrator member',
+      'member' => 'member',
+      'non-member' => 'non-member',
     ),
   );
 
@@ -278,11 +248,6 @@ function clair_groups_og_features_default_permissions() {
     'roles' => array(),
   );
 
-  // Exported og permission: 'node:collection:view field_media field'
-  $permissions['node:collection:view field_media field'] = array(
-    'roles' => array(),
-  );
-
   // Exported og permission: 'node:collection:view field_tags field'
   $permissions['node:collection:view field_tags field'] = array(
     'roles' => array(),
@@ -297,8 +262,8 @@ function clair_groups_og_features_default_permissions() {
   $permissions['node:collection:view group_group field'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
-      'non-member' => 'non-member',
       'member' => 'member',
+      'non-member' => 'non-member',
     ),
   );
 

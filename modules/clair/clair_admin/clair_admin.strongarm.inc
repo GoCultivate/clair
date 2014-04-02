@@ -42,7 +42,7 @@ function clair_admin_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_page';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_default_mode_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -70,7 +70,7 @@ function clair_admin_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_form_location_page';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_form_location_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -112,7 +112,7 @@ function clair_admin_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_page';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_subject_field_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -248,7 +248,7 @@ function clair_admin_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'clair';
+  $strongarm->value = 'clair_theme';
   $export['theme_default'] = $strongarm;
 
   $strongarm = new stdClass();

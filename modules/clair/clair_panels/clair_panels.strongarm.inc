@@ -21,7 +21,7 @@ function clair_panels_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'page_manager_search_disabled_node';
-  $strongarm->value = TRUE;
+  $strongarm->value = 'true';
   $export['page_manager_search_disabled_node'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -36,9 +36,9 @@ function clair_panels_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_page';
   $strongarm->value = array(
-    'status' => 1,
-    'default' => 1,
-    'choice' => 1,
+    'status' => '1',
+    'default' => '1',
+    'choice' => '1',
   );
   $export['panelizer_defaults_node_page'] = $strongarm;
 
@@ -47,9 +47,9 @@ function clair_panels_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_taxonomy_term_tags';
   $strongarm->value = array(
-    'status' => 1,
-    'default' => 1,
-    'choice' => 1,
+    'status' => '1',
+    'default' => '1',
+    'choice' => '1',
   );
   $export['panelizer_defaults_taxonomy_term_tags'] = $strongarm;
 
@@ -58,9 +58,9 @@ function clair_panels_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_user_user';
   $strongarm->value = array(
-    'status' => 1,
-    'default' => 1,
-    'choice' => 1,
+    'status' => '1',
+    'default' => '1',
+    'choice' => '1',
   );
   $export['panelizer_defaults_user_user'] = $strongarm;
 
