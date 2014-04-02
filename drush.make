@@ -83,7 +83,7 @@ libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][type] = "library"
 libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "http://download.moxiecode.com/tinymce/tinymce_4.0.21.zip"
-libraries[tinymce][download][subtree] = "js/tinymce"
+libraries[tinymce][download][subtree] = "tinymce/js/tinymce"
 
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
