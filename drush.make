@@ -15,14 +15,14 @@ projects[date][version] = 2.7
 projects[features][version] = 2.0
 projects[entityreference][version] = 1.1
 ; Flags will need to be recreated if we choose to move to Flag 7.x-3.x.
-projects[flag][version] = 2.0
+projects[flag][version] = 2.2
 projects[flexslider][version] = 2.0-alpha3
 projects[flexslider_views_slideshow][version] = 2.x-dev
 projects[fullcalendar][version] = 2.0
 projects[media][version] = 1.4
 projects[og][version] = 2.6
 projects[diff][version] = 3.2
-projects[entity][version] = 1.3
+projects[entity][version] = 1.4
 projects[libraries][version] = 2.2
 projects[navbar][version] = 1.4
 projects[panels_breadcrumbs][version] = 2.1
