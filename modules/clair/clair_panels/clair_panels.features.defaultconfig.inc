@@ -26,9 +26,9 @@ function clair_panels_defaultconfig_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_article';
   $strongarm->value = array(
-    'status' => 1,
-    'default' => 1,
-    'choice' => 1,
+    'status' => '1',
+    'default' => '1',
+    'choice' => '1',
   );
   $export['panelizer_defaults_node_article'] = $strongarm;
 
@@ -37,9 +37,9 @@ function clair_panels_defaultconfig_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_collection';
   $strongarm->value = array(
-    'status' => 1,
-    'default' => 1,
-    'choice' => 1,
+    'status' => '1',
+    'default' => '1',
+    'choice' => '1',
   );
   $export['panelizer_defaults_node_collection'] = $strongarm;
 
@@ -48,9 +48,9 @@ function clair_panels_defaultconfig_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_event';
   $strongarm->value = array(
-    'status' => 1,
-    'default' => 1,
-    'choice' => 1,
+    'status' => '1',
+    'default' => '1',
+    'choice' => '1',
   );
   $export['panelizer_defaults_node_event'] = $strongarm;
 

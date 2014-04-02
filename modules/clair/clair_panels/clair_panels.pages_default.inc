@@ -16,7 +16,10 @@ function clair_panels_default_page_manager_pages() {
   $page->admin_title = 'Homepage';
   $page->admin_description = 'This panel controls the site\'s frontpage.';
   $page->path = 'homepage';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -63,10 +66,11 @@ function clair_panels_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = '';
+  $display->uuid = '439be10c-a4f8-4064-8501-d85b0f1d1442';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-6c4485b8-bb0a-46c4-afc1-86b5f8fc2a50';
     $pane->panel = 'half';
     $pane->type = 'views';
     $pane->subtype = 'clair_front_page';
@@ -94,10 +98,11 @@ function clair_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-1'] = $pane;
-    $display->panels['half'][0] = 'new-1';
+    $pane->uuid = '6c4485b8-bb0a-46c4-afc1-86b5f8fc2a50';
+    $display->content['new-6c4485b8-bb0a-46c4-afc1-86b5f8fc2a50'] = $pane;
+    $display->panels['half'][0] = 'new-6c4485b8-bb0a-46c4-afc1-86b5f8fc2a50';
     $pane = new stdClass();
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-f438fd63-4dc8-4ee1-b613-71b9dc68717d';
     $pane->panel = 'quarter1';
     $pane->type = 'views';
     $pane->subtype = 'clair_blog';
@@ -125,10 +130,11 @@ function clair_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['quarter1'][0] = 'new-2';
+    $pane->uuid = 'f438fd63-4dc8-4ee1-b613-71b9dc68717d';
+    $display->content['new-f438fd63-4dc8-4ee1-b613-71b9dc68717d'] = $pane;
+    $display->panels['quarter1'][0] = 'new-f438fd63-4dc8-4ee1-b613-71b9dc68717d';
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-b1c370ab-5fe9-4852-8ff1-b5fa089271ae';
     $pane->panel = 'quarter2';
     $pane->type = 'views';
     $pane->subtype = 'clair_events';
@@ -156,8 +162,9 @@ function clair_panels_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['quarter2'][0] = 'new-3';
+    $pane->uuid = 'b1c370ab-5fe9-4852-8ff1-b5fa089271ae';
+    $display->content['new-b1c370ab-5fe9-4852-8ff1-b5fa089271ae'] = $pane;
+    $display->panels['quarter2'][0] = 'new-b1c370ab-5fe9-4852-8ff1-b5fa089271ae';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

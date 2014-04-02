@@ -28,7 +28,7 @@ function clair_groups_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_collection';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_default_mode_collection'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -42,7 +42,7 @@ function clair_groups_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_form_location_collection';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_form_location_collection'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -56,7 +56,7 @@ function clair_groups_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_collection';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_subject_field_collection'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -65,26 +65,23 @@ function clair_groups_strongarm() {
   $strongarm->name = 'field_bundle_settings_node__collection';
   $strongarm->value = array(
     'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => 'true',
       ),
       'rss' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => 'false',
       ),
       'search_index' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => 'false',
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => 'false',
       ),
       'diff_standard' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => 'false',
       ),
       'token' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => 'false',
       ),
     ),
     'extra_fields' => array(
@@ -96,7 +93,6 @@ function clair_groups_strongarm() {
           'weight' => '4',
         ),
       ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__collection'] = $strongarm;
@@ -138,7 +134,7 @@ function clair_groups_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_collection';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['node_submitted_collection'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -146,9 +142,9 @@ function clair_groups_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_collection';
   $strongarm->value = array(
-    'status' => 1,
-    'default' => 1,
-    'choice' => 1,
+    'status' => '1',
+    'default' => '1',
+    'choice' => '1',
   );
   $export['panelizer_defaults_node_collection'] = $strongarm;
 
