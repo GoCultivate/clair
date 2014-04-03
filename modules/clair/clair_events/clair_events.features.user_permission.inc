@@ -14,6 +14,7 @@ function clair_events_user_default_permissions() {
   $permissions['create event content'] = array(
     'name' => 'create event content',
     'roles' => array(
+      'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -23,6 +24,7 @@ function clair_events_user_default_permissions() {
   $permissions['delete any event content'] = array(
     'name' => 'delete any event content',
     'roles' => array(
+      'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -32,6 +34,7 @@ function clair_events_user_default_permissions() {
   $permissions['delete own event content'] = array(
     'name' => 'delete own event content',
     'roles' => array(
+      'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -41,6 +44,7 @@ function clair_events_user_default_permissions() {
   $permissions['edit any event content'] = array(
     'name' => 'edit any event content',
     'roles' => array(
+      'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -50,6 +54,7 @@ function clair_events_user_default_permissions() {
   $permissions['edit own event content'] = array(
     'name' => 'edit own event content',
     'roles' => array(
+      'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

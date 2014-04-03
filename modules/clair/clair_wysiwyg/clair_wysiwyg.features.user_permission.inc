@@ -10,19 +10,21 @@
 function clair_wysiwyg_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: use text format html.
+  // Exported permission: 'use text format html'.
   $permissions['use text format html'] = array(
     'name' => 'use text format html',
     'roles' => array(
+      'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
   );
 
-  // Exported permission: use text format wyiwyg.
+  // Exported permission: 'use text format wyiwyg'.
   $permissions['use text format wyiwyg'] = array(
     'name' => 'use text format wyiwyg',
     'roles' => array(
+      'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
       'content creator' => 'content creator',
       'editor' => 'editor',
