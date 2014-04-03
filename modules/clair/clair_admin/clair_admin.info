@@ -150,7 +150,6 @@ features[variable][] = node_preview_object
 features[variable][] = node_preview_page
 features[variable][] = node_submitted_object
 features[variable][] = node_submitted_page
-features[variable][] = site_name
 features[variable][] = theme_default
 features[variable][] = total_control_auto_pages
 features[variable][] = total_control_auto_panels
