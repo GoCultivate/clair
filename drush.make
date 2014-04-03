@@ -95,3 +95,5 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 ; Patches
 ; Fix an error that causes drush site-install to blow out
 projects[drupal][patch][] = https://drupal.org/files/1093420-22.patch
+; enable drush to use since
+projects[drupal][patch][] = https://drupal.org/files/devel-provide-drush-option-1560078-5.patch

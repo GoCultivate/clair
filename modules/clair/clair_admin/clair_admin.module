@@ -11,7 +11,7 @@ include_once 'clair_admin.features.inc';
  * We are enabling in-place pane editor automatically on all nodes.
  */
 function clair_admin_node_presave($node){
-  $node->panelizer->pipeline = 'ipe';
+  $node->panelizer['page_manager']->pipeline = 'ipe';
 }
 
 /**
