@@ -25,6 +25,7 @@ projects[og][version] = 2.6
 projects[diff][version] = 3.2
 projects[entity][version] = 1.4
 projects[libraries][version] = 2.2
+projects[metatag][version] = 1.0-beta9
 projects[navbar][version] = 1.4
 projects[panels_breadcrumbs][version] = 2.1
 projects[pathauto][version] = 1.2
