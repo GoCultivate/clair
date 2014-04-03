@@ -10,6 +10,12 @@
 function clair_admin_user_default_roles() {
   $roles = array();
 
+  // Exported role: CMS administrator.
+  $roles['CMS administrator'] = array(
+    'name' => 'CMS administrator',
+    'weight' => 14,
+  );
+
   // Exported role: content creator.
   $roles['content creator'] = array(
     'name' => 'content creator',
