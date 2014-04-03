@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Implements hook_enable().
+ */
+function clair_demo_mode_enable() {
+  // This needs to be set to drush path
+  $drush = 'drush';
+
+  // Generate terms
+  // This is legacy from rjs_blog distro but will need to be done in clair as well
+  $cmd = $drush . ' generate-terms tags 10 --kill=true';
+  _clair_demo_mode_exec($cmd);
+
+  // generate blog content
+  // @TODO this patch: https://drupal.org/node/1560078 needs to be added for the --since flag
+  // @TODO collections and other stuff to be generated as well
+  $cmd = $drush . ' generate-content 50 20 --types=article --kill=true --since="last year"';
+  _clair_demo_mode_exec($cmd);
+
+  // @TODO generate some panels and front page stuff and shit
+}

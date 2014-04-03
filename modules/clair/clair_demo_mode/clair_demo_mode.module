@@ -1,0 +1,56 @@
+<?php
+/**
+ * @file
+ * Code for the CLAIR Demo Mode feature.
+ */
+
+include_once 'clair_demo_mode.features.inc';
+
+/**
+ * Print debug to watchdog.
+ *
+ * @param $var
+ *   The variable or message to print.
+ */
+function clair_demo_mode_debug($var) {
+  if(is_array($var)) {
+    watchdog('demo mode', '<pre>' . print_r($var, true) . '</pre>', array(), WATCHDOG_NOTICE);
+  } else {
+    watchdog('demo mode', '<pre>' . $var . '</pre>', array(), WATCHDOG_NOTICE);
+  }
+}
+
+/**
+ * Helper function for executing a command line command
+ */
+function _clair_demo_mode_exec($cmd, $msg = '', $die_on_error = TRUE) {
+  exec($cmd . ' 2>&1', $output, $status);
+
+  clair_demo_mode_debug($cmd);
+  clair_demo_mode_debug('Status: ' . $status . ' | Output: ');
+  clair_demo_mode_debug($output);
+
+  _clair_demo_mode_batch_error_check($status, $msg, $die_on_error);
+
+  return $status == 0;
+}
+
+/**
+ * Helper function for determining if a command line error occured. Exit if error occurs.
+ *
+ * @param $status
+ *   The exit status of a command line command. If this is 0 then no error has
+ *   occured.
+ *
+ * @param $message
+ *   The error mesage to display.
+ */
+function _clair_demo_mode_batch_error_check($status, $message = '', $die_on_error = TRUE) {
+  if ($status != 0) {
+    $message = empty($message) ? t('An error occured.') : $message;
+    if ($die_on_error) {
+      $result = array('status' => FALSE, 'data' => $message);
+      die(json_encode($result));
+    }
+  }
+}
