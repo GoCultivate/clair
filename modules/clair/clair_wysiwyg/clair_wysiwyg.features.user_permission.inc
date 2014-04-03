@@ -26,9 +26,6 @@ function clair_wysiwyg_user_default_permissions() {
     'roles' => array(
       'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
-      'content creator' => 'content creator',
-      'editor' => 'editor',
-      'publisher' => 'publisher',
     ),
     'module' => 'filter',
   );
