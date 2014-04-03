@@ -59,6 +59,8 @@ dependencies[] = date_views
 dependencies[] = dummyimage
 ; Fields
 dependencies[] = entityreference
+; Field Group
+dependencies[] = field_group
 ; Flags
 dependencies[] = flag
 ; FlexSlider
