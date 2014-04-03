@@ -87,13 +87,12 @@ function clair_groups_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
       ),
-      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__collection'] = $strongarm;
