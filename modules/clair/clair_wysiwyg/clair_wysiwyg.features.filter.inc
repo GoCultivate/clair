@@ -16,7 +16,7 @@ function clair_wysiwyg_filter_default_formats() {
     'name' => 'HTML',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -9,
     'filters' => array(),
   );
 
@@ -26,7 +26,7 @@ function clair_wysiwyg_filter_default_formats() {
     'name' => 'Plain text',
     'cache' => 1,
     'status' => 1,
-    'weight' => 10,
+    'weight' => -8,
     'filters' => array(
       'filter_html_escape' => array(
         'weight' => 0,
@@ -54,7 +54,7 @@ function clair_wysiwyg_filter_default_formats() {
     'name' => 'WYSIWYG',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -10,
     'filters' => array(
       'filter_html' => array(
         'weight' => -10,
