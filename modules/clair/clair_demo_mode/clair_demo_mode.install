@@ -13,10 +13,70 @@ function clair_demo_mode_enable() {
   _clair_demo_mode_exec($cmd);
 
   // generate blog content
-  // @TODO this patch: https://drupal.org/node/1560078 needs to be added for the --since flag
+  // @TODO this patch: https://drupal.org/node/1560078 needs to be added for the --since flag (afterwards, remove --strict=0)
   // @TODO collections and other stuff to be generated as well
-  $cmd = $drush . ' generate-content 50 20 --types=article --kill=true --since="last year"';
+  $cmd = $drush . ' generate-content 50 20 --types=article --kill=true --since="last year" --strict=0';
   _clair_demo_mode_exec($cmd);
 
+  
+  $lang = 'und';
+  //create 10 collection nodes with 50 nodes each of: articles, events, objects.
+  $cmd = $drush . ' generate-content 10 0 --types=collection --kill=true --since="last year" --strict=0';
+  _clair_demo_mode_exec($cmd);
+ 
+  $query = db_select('node', 'n')->fields('n')->condition('type', 'collection','=')->orderBy('nid', 'DESC')->range(0,10);
+  $collections = $query->execute();
+ 
+  while($record = $collections->fetchAssoc()) {
+       $collection_nid = $record['nid'];   
+    //create 50 articles
+    $cmd = $drush . ' generate-content 50 20 --types=article --kill=true --since="last year" --strict=0';
+    _clair_demo_mode_exec($cmd);
+    $query = db_select('node', 'n')->fields('n')->condition('type', 'article','=')->orderBy('nid', 'DESC')->range(0,50);
+    $articles = $query->execute();
+    while($record = $articles->fetchAssoc()) {
+       $article = node_load($record['nid']);
+       $article->og_group_ref[$lang] = array();
+       $article->og_group_ref[$lang][0]['target_id'] = $collection_nid;
+       node_save($article);
+    }
+                                     
+    //create 50 events
+    $cmd = $drush . ' generate-content 50 0 --types=event --kill=true --since="last year" --strict=0';
+    _clair_demo_mode_exec($cmd);
+    $query = db_select('node', 'n')->fields('n')->condition('type', 'event','=')->orderBy('nid', 'DESC')->range(0,50);
+    $events = $query->execute();
+    while($record = $events->fetchAssoc()) {
+       $event = node_load($record['nid']);
+       $event->og_group_ref[$lang] = array();
+       $event->og_group_ref[$lang][0]['target_id'] =  $collection_nid;
+       node_save($event);
+    }
+ 
+
+    //create 50 objects
+    $cmd = $drush . ' generate-content 50 0 --types=object --kill=true --since="last year" --strict=0';
+    _clair_demo_mode_exec($cmd);
+    $query = db_select('node', 'n')->fields('n')->condition('type', 'object','=')->orderBy('nid', 'DESC')->range(0,50);
+    $objects = $query->execute();
+    while($record = $objects->fetchAssoc()) {
+       $object = node_load($record['nid']);
+       $object->og_group_ref[$lang] = array();
+       $object->og_group_ref[$lang][0]['target_id'] =  $collection_nid;
+       node_save($object);
+    }
+ 
+  }
+
+  //It should create 10 pages.
+  $cmd = $drush . ' generate-content 10 0 --types=page --kill=true --since="last year" --strict=0';
+  _clair_demo_mode_exec($cmd);
+  
+  
+  
+  
   // @TODO generate some panels and front page stuff and shit
+  
+  
+  
 }
