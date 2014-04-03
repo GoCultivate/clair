@@ -14,6 +14,7 @@ projects[context][version] = 3.2
 projects[date][version] = 2.7
 projects[features][version] = 2.0
 projects[entityreference][version] = 1.1
+projects[field_group][version] = 1.3
 ; Flags will need to be recreated if we choose to move to Flag 7.x-3.x.
 projects[flag][version] = 2.2
 projects[flexslider][version] = 2.0-alpha3
