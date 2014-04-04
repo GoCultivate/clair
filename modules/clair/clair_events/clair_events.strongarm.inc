@@ -70,10 +70,10 @@ function clair_events_strongarm() {
           'weight' => '8',
         ),
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '7',
         ),
         'redirect' => array(
           'weight' => '6',
@@ -81,13 +81,8 @@ function clair_events_strongarm() {
         'xmlsitemap' => array(
           'weight' => '5',
         ),
-        'flag' => array(
-          'weight' => '3',
-        ),
       ),
-      'display' => array(),
     ),
-    'view_modes' => array(),
   );
   $export['field_bundle_settings_node__event'] = $strongarm;
 
