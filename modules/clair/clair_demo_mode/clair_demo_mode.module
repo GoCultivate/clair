@@ -30,7 +30,7 @@ function _clair_demo_mode_exec($cmd, $msg = '', $die_on_error = TRUE) {
   clair_demo_mode_debug('Status: ' . $status . ' | Output: ');
   clair_demo_mode_debug($output);
 
-  _clair_demo_mode_batch_error_check($status, $msg, $die_on_error);
+  //_clair_demo_mode_batch_error_check($status, $msg, $die_on_error);
 
   return $status == 0;
 }
