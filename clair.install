@@ -127,73 +127,85 @@ function clair_install() {
        'plid' => $plid,
        'router_path' => 'node/add',
      ),
-     'management_article:node/add/article' => array(
-       'customized' => 1,
-       'link_path' => 'node/add/article',
-       'link_title' => 'Article',
-       'menu_name' => 'management',
-       'module' => 'menu',
-       'options' => array(
-         'identifier' => 'management_article:node/add/article',
-       ),
-       'plid' => $plid,
-       'router_path' => 'node/add/article',
-     ),
-     'management_collection:node/add/collection' => array(
-       'customized' => 1,
-       'link_path' => 'node/add/collection',
-       'link_title' => 'Collection',
-       'menu_name' => 'management',
-       'module' => 'menu',
-       'options' => array(
-         'identifier' => 'management_collection:node/add/collection',
-       ),
-       'plid' => $plid,
-       'router_path' => 'node/add/collection',
-     ),
-     'management_event:node/add/event' => array(
-       'customized' => 1,
-       'link_path' => 'node/add/event',
-       'link_title' => 'Event',
-       'menu_name' => 'management',
-       'module' => 'menu',
-       'options' => array(
-         'identifier' => 'management_event:node/add/event',
-       ),
-       'plid' => $plid,
-       'router_path' => 'node/add/event',
-     ),
-     'management_object:node/add/object' => array(
-       'customized' => 1,
-       'link_path' => 'node/add/object',
-       'link_title' => 'Object',
-       'menu_name' => 'management',
-       'module' => 'menu',
-       'options' => array(
-         'identifier' => 'management_object:node/add/object',
-       ),
-       'plid' => $plid,
-       'router_path' => 'node/add/object',
-     ),
-     'management_page:node/add/page' => array(
-       'customized' => 1,
-       'link_path' => 'node/add/page',
-       'link_title' => 'Page',
-       'menu_name' => 'management',
-       'module' => 'menu',
-       'options' => array(
-         'identifier' => 'management_page:node/add/page',
-       ),
-       'plid' => $plid,
-       'router_path' => 'node/add/page',
-     ),
    );
     
     foreach($menu_links_management as $key=>$menu_link_item) {
       menu_link_save($menu_link_item);
     }
+    
+    
+      $result = db_query("SELECT mlid FROM {menu_links} WHERE menu_name = :menu_name AND link_title = :link_title AND link_path = :link_path", array(':menu_name'=>'management',':link_title'=>'Add Content',':link_path'=>'node/add'))->fetchObject();
+      $plid = $result->mlid ? $result->mlid : 0;
+      if ($plid) {
+        $menu_links_management =  array(
+         'management_article:node/add/article' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/article',
+           'link_title' => 'Article',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_article:node/add/article',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/article',
+         ),
+         'management_collection:node/add/collection' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/collection',
+           'link_title' => 'Collection',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_collection:node/add/collection',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/collection',
+         ),
+         'management_event:node/add/event' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/event',
+           'link_title' => 'Event',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_event:node/add/event',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/event',
+         ),
+         'management_object:node/add/object' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/object',
+           'link_title' => 'Object',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_object:node/add/object',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/object',
+         ),
+         'management_page:node/add/page' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/page',
+           'link_title' => 'Page',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_page:node/add/page',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/page',
+         ),
+       );
+        
+      foreach($menu_links_management as $key=>$menu_link_item) {
+        menu_link_save($menu_link_item);
+      }
+    }
   }
-  
+    
   
   shortcut_set_save($shortcut_set);// Create a default role for site administrators, with all available permissions assigned.
   $admin_role = new stdClass();

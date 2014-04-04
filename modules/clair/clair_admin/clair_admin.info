@@ -46,7 +46,6 @@ features[menu_links][] = management_article:node/add/article
 features[menu_links][] = management_collection:node/add/collection
 features[menu_links][] = management_event:node/add/event
 features[menu_links][] = management_object:node/add/object
-features[menu_links][] = management_pade:node/add/page
 features[node][] = object
 features[node][] = page
 features[taxonomy][] = object_type

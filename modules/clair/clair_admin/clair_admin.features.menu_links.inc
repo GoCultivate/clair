@@ -17,9 +17,6 @@ function clair_admin_menu_default_menu_links() {
     'router_path' => 'node/add',
     'link_title' => 'Add Content',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
       'identifier' => 'management_add-content:node/add',
     ),
     'module' => 'menu',
@@ -38,9 +35,6 @@ function clair_admin_menu_default_menu_links() {
     'router_path' => 'node/add/article',
     'link_title' => 'Article',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
       'identifier' => 'management_article:node/add/article',
     ),
     'module' => 'menu',
@@ -59,9 +53,6 @@ function clair_admin_menu_default_menu_links() {
     'router_path' => 'node/add/collection',
     'link_title' => 'Collection',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
       'identifier' => 'management_collection:node/add/collection',
     ),
     'module' => 'menu',
@@ -80,9 +71,6 @@ function clair_admin_menu_default_menu_links() {
     'router_path' => 'node/add/event',
     'link_title' => 'Event',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
       'identifier' => 'management_event:node/add/event',
     ),
     'module' => 'menu',
@@ -101,31 +89,7 @@ function clair_admin_menu_default_menu_links() {
     'router_path' => 'node/add/object',
     'link_title' => 'Object',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
       'identifier' => 'management_object:node/add/object',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'parent_identifier' => 'management_add-content:node/add',
-  );
-  // Exported menu link: management_page:node/add/page
-  $menu_links['management_page:node/add/page'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'node/add/page',
-    'router_path' => 'node/add/page',
-    'link_title' => 'Page',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'management_page:node/add/page',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -143,7 +107,6 @@ function clair_admin_menu_default_menu_links() {
   t('Collection');
   t('Event');
   t('Object');
-  t('Page');
 
 
   return $menu_links;
