@@ -171,7 +171,7 @@ function clair_blog_field_default_field_instances() {
     'bundle' => 'article',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select which collection(s) this Article belongs to.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -189,8 +189,8 @@ function clair_blog_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'og_group_ref',
-    'label' => 'Groups audience',
-    'required' => FALSE,
+    'label' => 'Collection',
+    'required' => 0,
     'settings' => array(
       'behaviors' => array(
         'og_widget' => array(
@@ -218,6 +218,7 @@ function clair_blog_field_default_field_instances() {
       ),
     ),
     'widget' => array(
+      'active' => 0,
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
@@ -228,9 +229,10 @@ function clair_blog_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Collection');
   t('Enter a comma-separated list of words to describe your content.');
-  t('Groups audience');
   t('Image');
+  t('Select which collection(s) this Article belongs to.');
   t('Tags');
   t('Upload an image to go with this article.');
 

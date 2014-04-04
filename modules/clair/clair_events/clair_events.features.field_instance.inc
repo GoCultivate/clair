@@ -181,7 +181,7 @@ function clair_events_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select which collection(s) this Event is related to.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -199,8 +199,8 @@ function clair_events_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'og_group_ref',
-    'label' => 'Groups audience',
-    'required' => FALSE,
+    'label' => 'Collection',
+    'required' => 0,
     'settings' => array(
       'behaviors' => array(
         'og_widget' => array(
@@ -228,6 +228,7 @@ function clair_events_field_default_field_instances() {
       ),
     ),
     'widget' => array(
+      'active' => 0,
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
@@ -238,9 +239,10 @@ function clair_events_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Collection');
   t('Date');
   t('Event Image');
-  t('Groups audience');
+  t('Select which collection(s) this Event is related to.');
 
   return $field_instances;
 }

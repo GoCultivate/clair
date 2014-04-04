@@ -136,7 +136,7 @@ function clair_admin_field_default_field_instances() {
     'bundle' => 'object',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Select which collection(s) this Object belongs to.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -242,6 +242,7 @@ function clair_admin_field_default_field_instances() {
   t('Collection');
   t('ID #');
   t('May also be listed as Accession #');
+  t('Select which collection(s) this Object belongs to.');
   t('Type');
 
   return $field_instances;
