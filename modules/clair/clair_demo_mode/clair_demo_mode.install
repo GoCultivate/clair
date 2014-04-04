@@ -5,7 +5,7 @@
  */
 function clair_demo_mode_enable() {
   // This needs to be set to drush path
-  $drush = 'drush';
+  $drush = trim(shell_exec('which drush'));
 
   // Generate terms
   // This is legacy from rjs_blog distro but will need to be done in clair as well
@@ -18,17 +18,16 @@ function clair_demo_mode_enable() {
   $cmd = $drush . ' generate-content 50 20 --types=article --kill=true --since="last year" --strict=0';
   _clair_demo_mode_exec($cmd);
 
-  
   $lang = 'und';
   //create 10 collection nodes with 50 nodes each of: articles, events, objects.
   $cmd = $drush . ' generate-content 10 0 --types=collection --kill=true --since="last year" --strict=0';
   _clair_demo_mode_exec($cmd);
- 
+
   $query = db_select('node', 'n')->fields('n')->condition('type', 'collection','=')->orderBy('nid', 'DESC')->range(0,10);
   $collections = $query->execute();
- 
+
   while($record = $collections->fetchAssoc()) {
-       $collection_nid = $record['nid'];   
+       $collection_nid = $record['nid'];
     //create 50 articles
     $cmd = $drush . ' generate-content 50 20 --types=article --kill=true --since="last year" --strict=0';
     _clair_demo_mode_exec($cmd);
@@ -40,7 +39,7 @@ function clair_demo_mode_enable() {
        $article->og_group_ref[$lang][0]['target_id'] = $collection_nid;
        node_save($article);
     }
-                                     
+
     //create 50 events
     $cmd = $drush . ' generate-content 50 0 --types=event --kill=true --since="last year" --strict=0';
     _clair_demo_mode_exec($cmd);
@@ -52,7 +51,6 @@ function clair_demo_mode_enable() {
        $event->og_group_ref[$lang][0]['target_id'] =  $collection_nid;
        node_save($event);
     }
- 
 
     //create 50 objects
     $cmd = $drush . ' generate-content 50 0 --types=object --kill=true --since="last year" --strict=0';
@@ -65,18 +63,11 @@ function clair_demo_mode_enable() {
        $object->og_group_ref[$lang][0]['target_id'] =  $collection_nid;
        node_save($object);
     }
- 
   }
 
   //It should create 10 pages.
   $cmd = $drush . ' generate-content 10 0 --types=page --kill=true --since="last year" --strict=0';
   _clair_demo_mode_exec($cmd);
-  
-  
-  
-  
-  // @TODO generate some panels and front page stuff and shit
-  
-  
-  
+
+  // @TODO generate some panels and front page stuff
 }
