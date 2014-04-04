@@ -21,14 +21,14 @@ function clair_demo_mode_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'dummyimages_lorempixum_category';
-  $strongarm->value = 'city';
+  $strongarm->value = 'random';
   $export['dummyimages_lorempixum_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'dummyimages_service';
-  $strongarm->value = 'lorempixum';
+  $strongarm->value = 'dummyimage';
   $export['dummyimages_service'] = $strongarm;
 
   $strongarm = new stdClass();
