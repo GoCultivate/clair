@@ -95,9 +95,9 @@ function clair_install() {
   
   // revert features to ensure they are all installed
   $features = array(
-    ''
+    'clair_admin'
   );
-  features_revert($features);
+  //features_revert($features);
   // From shortcut.install, add shortcuts to the default set on install
   $shortcut_set = shortcut_set_load(SHORTCUT_DEFAULT_SET_NAME);
   $shortcut_set->links = NULL;
@@ -108,6 +108,105 @@ function clair_install() {
       'weight' => -17,
     ),
   );
+  
+  //add the menu links for adding content to management menu
+    $result = db_query("SELECT mlid FROM {menu_links} WHERE menu_name = :menu_name AND link_title = :link_title AND link_path = :link_path", array(':menu_name'=>'management',':link_title'=>'Content',':link_path'=>'admin/content'))->fetchObject();
+  $plid = $result->mlid ? $result->mlid : 0;
+  if ($plid) {
+    $menu_links_management =  array(
+     'management_add-content:node/add' => array(
+       'customized' => 1,
+       'has_children' => 1,
+       'link_path' => 'node/add',
+       'link_title' => 'Add Content',
+       'menu_name' => 'management',
+       'module' => 'menu',
+       'options' => array(
+         'identifier' => 'management_add-content:node/add',
+       ),
+       'plid' => $plid,
+       'router_path' => 'node/add',
+     ),
+   );
+    
+    foreach($menu_links_management as $key=>$menu_link_item) {
+      menu_link_save($menu_link_item);
+    }
+    
+    
+      $result = db_query("SELECT mlid FROM {menu_links} WHERE menu_name = :menu_name AND link_title = :link_title AND link_path = :link_path", array(':menu_name'=>'management',':link_title'=>'Add Content',':link_path'=>'node/add'))->fetchObject();
+      $plid = $result->mlid ? $result->mlid : 0;
+      if ($plid) {
+        $menu_links_management =  array(
+         'management_article:node/add/article' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/article',
+           'link_title' => 'Article',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_article:node/add/article',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/article',
+         ),
+         'management_collection:node/add/collection' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/collection',
+           'link_title' => 'Collection',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_collection:node/add/collection',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/collection',
+         ),
+         'management_event:node/add/event' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/event',
+           'link_title' => 'Event',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_event:node/add/event',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/event',
+         ),
+         'management_object:node/add/object' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/object',
+           'link_title' => 'Object',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_object:node/add/object',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/object',
+         ),
+         'management_page:node/add/page' => array(
+           'customized' => 1,
+           'link_path' => 'node/add/page',
+           'link_title' => 'Page',
+           'menu_name' => 'management',
+           'module' => 'menu',
+           'options' => array(
+             'identifier' => 'management_page:node/add/page',
+           ),
+           'plid' => $plid,
+           'router_path' => 'node/add/page',
+         ),
+       );
+        
+      foreach($menu_links_management as $key=>$menu_link_item) {
+        menu_link_save($menu_link_item);
+      }
+    }
+  }
+    
+  
   shortcut_set_save($shortcut_set);// Create a default role for site administrators, with all available permissions assigned.
   $admin_role = new stdClass();
   $admin_role->name = 'administrator';
