@@ -24,6 +24,7 @@ function clair_groups_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Popular Collections';
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -56,6 +57,11 @@ function clair_groups_views_default_views() {
     'image_style' => 'square_thumbnail',
     'image_link' => 'content',
   );
+  $handler->display->display_options['fields']['field_collection_image']['group_column'] = 'entity_id';
+  $handler->display->display_options['fields']['field_collection_image']['group_columns'] = array(
+    'entity_id' => 'entity_id',
+  );
+  $handler->display->display_options['fields']['field_collection_image']['delta_offset'] = '0';
   /* Sort criterion: Content: Updated date */
   $handler->display->display_options['sorts']['changed']['id'] = 'changed';
   $handler->display->display_options['sorts']['changed']['table'] = 'node';
