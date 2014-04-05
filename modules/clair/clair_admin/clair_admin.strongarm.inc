@@ -147,6 +147,9 @@ function clair_admin_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
+          'weight' => '2',
+        ),
+        'metatags' => array(
           'weight' => '3',
         ),
       ),

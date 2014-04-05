@@ -26,6 +26,7 @@ function clair_admin_user_default_permissions() {
     'roles' => array(
       'CMS administrator' => 'CMS administrator',
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
     ),
     'module' => 'node',
   );
