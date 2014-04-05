@@ -56,4 +56,7 @@ features[variable][] = menu_parent_event
 features[variable][] = node_options_event
 features[variable][] = node_preview_event
 features[variable][] = node_submitted_event
+features[views_view][] = clair_event_group_event_list
 features[views_view][] = clair_events
+features[views_view][] = clair_events_list_unfiltered
+features[views_view][] = clair_events_mini_calendar
