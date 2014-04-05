@@ -17,7 +17,13 @@ function clair_wysiwyg_filter_default_formats() {
     'cache' => 1,
     'status' => 1,
     'weight' => -9,
-    'filters' => array(),
+    'filters' => array(
+      'filter_autop' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
+    ),
   );
 
   // Exported format: Plain text.
