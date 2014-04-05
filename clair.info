@@ -81,6 +81,7 @@ dependencies[] = metatag_panels
 dependencies[] = og
 dependencies[] = og_access
 dependencies[] = og_field_access
+dependencies[] = og_menu
 dependencies[] = og_register
 dependencies[] = og_ui
 ; Other
