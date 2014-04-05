@@ -33,6 +33,7 @@ projects[media][version] = 1.4
 projects[metatag][version] = 1.0-beta9
 projects[navbar][version] = 1.4
 projects[og][version] = 2.6
+projects[og_menu][version] = 3.0-rc5
 projects[panelizer][version] = 3.1
 projects[panels][version] = 3.4
 projects[panels_breadcrumbs][version] = 2.1
