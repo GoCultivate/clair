@@ -62,6 +62,10 @@ function clair_panels_default_page_manager_pages() {
       'header' => NULL,
       'sidebar' => NULL,
       'content_main' => NULL,
+      'half' => NULL,
+      'quarter1' => NULL,
+      'quarter2' => NULL,
+      'footer' => NULL,
     ),
   );
   $display->cache = array();
@@ -93,7 +97,9 @@ function clair_panels_default_page_manager_pages() {
       'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -102,16 +108,16 @@ function clair_panels_default_page_manager_pages() {
     $display->content['new-6c4485b8-bb0a-46c4-afc1-86b5f8fc2a50'] = $pane;
     $display->panels['half'][0] = 'new-6c4485b8-bb0a-46c4-afc1-86b5f8fc2a50';
     $pane = new stdClass();
-    $pane->pid = 'new-f438fd63-4dc8-4ee1-b613-71b9dc68717d';
+    $pane->pid = 'new-5946f48b-a119-4604-803c-d186051b3172';
     $pane->panel = 'quarter1';
     $pane->type = 'views';
-    $pane->subtype = 'clair_blog';
+    $pane->subtype = 'clair_groups';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
       'use_pager' => 0,
-      'nodes_per_page' => '3',
+      'nodes_per_page' => '5',
       'pager_id' => '0',
       'offset' => '0',
       'more_link' => 0,
@@ -120,19 +126,21 @@ function clair_panels_default_page_manager_pages() {
       'link_to_view' => 0,
       'args' => '',
       'url' => '',
-      'display' => 'bog_unfiltered_block',
-      'override_title' => 1,
-      'override_title_text' => 'Popular Articles',
+      'display' => 'default',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'f438fd63-4dc8-4ee1-b613-71b9dc68717d';
-    $display->content['new-f438fd63-4dc8-4ee1-b613-71b9dc68717d'] = $pane;
-    $display->panels['quarter1'][0] = 'new-f438fd63-4dc8-4ee1-b613-71b9dc68717d';
+    $pane->uuid = '5946f48b-a119-4604-803c-d186051b3172';
+    $display->content['new-5946f48b-a119-4604-803c-d186051b3172'] = $pane;
+    $display->panels['quarter1'][0] = 'new-5946f48b-a119-4604-803c-d186051b3172';
     $pane = new stdClass();
     $pane->pid = 'new-b1c370ab-5fe9-4852-8ff1-b5fa089271ae';
     $pane->panel = 'quarter2';
@@ -157,7 +165,9 @@ function clair_panels_default_page_manager_pages() {
       'override_title_text' => '',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
