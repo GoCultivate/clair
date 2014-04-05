@@ -13,5 +13,9 @@ function clair_field_widget_form_alter(&$element, &$form_state, $context) {
   if(isset($element['#field_name']) && $element['#field_name']=='og_group_ref') {
     $element['#title'] = t('Your Collections');
     $element['#description'] = t('Associate this content with Collections you mangage.');
+    if (isset($element['admin']['#title']) && $element['admin']['#title'] =='Other groups'){
+      $element['admin']['#title'] = t('Other Collections');
+      $element['admin']['#description'] = t('As collections administrator, associate this content with collections you do <em>not</em> manage.');
+    }
   }
 }
