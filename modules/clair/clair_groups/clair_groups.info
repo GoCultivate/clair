@@ -5,6 +5,7 @@ package = CLAIR
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = field_group
+dependencies[] = flexslider_fields
 dependencies[] = image
 dependencies[] = list
 dependencies[] = media

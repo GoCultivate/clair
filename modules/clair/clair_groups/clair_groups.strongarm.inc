@@ -66,22 +66,25 @@ function clair_groups_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
-        'custom_settings' => 'true',
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
-        'custom_settings' => 'false',
+        'custom_settings' => TRUE,
       ),
       'search_index' => array(
-        'custom_settings' => 'false',
+        'custom_settings' => TRUE,
       ),
       'search_result' => array(
-        'custom_settings' => 'false',
+        'custom_settings' => TRUE,
       ),
       'diff_standard' => array(
-        'custom_settings' => 'false',
+        'custom_settings' => TRUE,
       ),
       'token' => array(
-        'custom_settings' => 'false',
+        'custom_settings' => TRUE,
+      ),
+      'teaser' => array(
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -93,6 +96,7 @@ function clair_groups_strongarm() {
           'weight' => '4',
         ),
       ),
+      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__collection'] = $strongarm;
