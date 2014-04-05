@@ -100,12 +100,13 @@ function clair_groups_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'flexslider_fields',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'caption' => 0,
+          'image_style' => 'flexslider_full',
+          'optionset' => 'image_gallery',
         ),
-        'type' => 'image',
+        'type' => 'flexslider',
         'weight' => 0,
       ),
       'diff_standard' => array(
@@ -182,6 +183,7 @@ function clair_groups_field_default_field_instances() {
           'public' => 'public',
         ),
         'allowed_types' => array(
+          0 => 0,
           'audio' => 0,
           'default' => 0,
           'image' => 'image',
