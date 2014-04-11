@@ -1,6 +1,6 @@
 Collections and Internal Records Management
 
-Demo site is here: http://clair.on95.com
+Demo site is here: http://demo.claircms.com
 
 CLAIR is an open-source Collections And Internal Records management
 system built as a Drupal distribution. It gives museums and institutions
