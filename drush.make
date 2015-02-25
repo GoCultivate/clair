@@ -3,53 +3,53 @@ core = "7.x"
 api = "2"
 ; comment this out in to use on drupal.org
 ; using 7.x gets 7.x-dev
-projects[drupal][version] = "7.26"
+projects[drupal][version] = "7.34"
 
 ; Default settings 
 defaults[projects][subdir] = contrib
 
 ; Modules
-projects[context][version] = 3.2
-projects[ctools][version] = 1.4
-projects[date][version] = 2.7
+projects[context][version] = 3.6
+projects[ctools][version] = 1.6
+projects[date][version] = 2.8
 ; Should this module be removed?
 projects[defaultconfig][version] = 1.0-alpha9
 projects[devel][version] = 1.4
 projects[diff][version] = 3.2
 ; We should really elimate dependency on dummyimage, should not be included on live site
 projects[dummyimage][version] = 1.5
-projects[entity][version] = 1.4
+projects[entity][version] = 1.5
 projects[entityreference][version] = 1.1
-projects[features][version] = 2.0
-projects[field_group][version] = 1.3
+projects[features][version] = 2.3
+projects[field_group][version] = 1.4
 ; Flags will need to be recreated if we choose to move to Flag 7.x-3.x.
 projects[flag][version] = 2.2
 projects[flexslider][version] = 2.0-alpha3
 projects[flexslider_views_slideshow][version] = 2.x-dev
 projects[fullcalendar][version] = 2.0
-projects[jquery_update][version] = 2.3
+projects[jquery_update][version] = 2.5
 projects[libraries][version] = 2.2
 projects[media][version] = 1.4
-projects[metatag][version] = 1.0-beta9
-projects[navbar][version] = 1.4
-projects[og][version] = 2.6
-projects[og_menu][version] = 3.0-rc5
+projects[metatag][version] = 1.4
+projects[navbar][version] = 1.6
+projects[og][version] = 2.7
+projects[og_menu][version] = 3.0
 projects[panelizer][version] = 3.1
-projects[panels][version] = 3.4
-projects[panels_breadcrumbs][version] = 2.1
+projects[panels][version] = 3.5
+projects[panels_breadcrumbs][version] = 2.2
 projects[panels_extra_layouts][version] = 2.0
 projects[pathauto][version] = 1.2
 projects[strongarm][version] = 2.0
 projects[token][version] = 1.5
 projects[unique_field][version] = 1.0-rc1
-projects[views][version] = 3.7
+projects[views][version] = 3.10
 projects[views_bulk_operations][version] = 3.2
 projects[views_slideshow][version] = 3.1
 projects[wysiwyg][version] = 2.2
 
 ; Themes
 projects[ember][version] = 2.0-alpha2
-projects[responsive_bartik][version] = 1.0-beta2
+projects[responsive_bartik][version] = 1.0
 
 ; Libraries
 libraries[backbone][directory_name] = "backbone"
